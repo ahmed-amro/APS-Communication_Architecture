@@ -5,6 +5,9 @@ A model for a communication architecture of an Autonomous Passenger Ship (APS). 
 - Note: The latest architecture model migh not be reflected by the model shared in this repository. We will do our best to update the model here with the latest desing improvmnets. Contact us if you are interested in unpublished updates. 
 ```
 
+## Usage
+Download project and import to OSATE2 software (https://osate.org/).
+
 ## Brief Description
 The model is represented in a Top-down Component-based manner. Each high level component in the ecosystem is described in a separate AADL package (.aadl). 
 
