@@ -1,0 +1,106 @@
+package ECT
+-- ECT: Emergency Control Team
+public
+	with  Requirements,AddedCommunicationProperties;	--APS,
+	
+	system APSCommunication
+		features
+			RadioCommunication: in out data port;
+			AISCommunication: in out data port;
+			RCCCommunication: in out data port;
+			MobileCommunication: in event port;
+		flows
+			ReceiveEmergencySignal_from_APS: flow sink MobileCommunication;
+			
+			TransmitEmergencyCommands_to_APS: flow source RadioCommunication;
+			
+			EmergencyNavigationData_APS_to_ECT: flow sink RadioCommunication;
+			EmergencySafetyData_APS_to_ECT: flow sink RadioCommunication;
+			EmergencyMachinaryData_APS_to_ECT: flow sink RadioCommunication;
+			EmergencyPowerData_APS_to_ECT: flow sink RadioCommunication;			
+			
+	end APSCommunication;
+	
+		system implementation APSCommunication.impl
+			subcomponents
+				ECT_EmergencyModule: system EmergencyModule
+				{
+					Requirements::RequiredFuntions => 'Wireless Communication; Secure Communication; Emergency Navigation/Machinery Data Reception; Emergency Control Commands Transmission'; 
+				};					
+				ECT_EmergencyButtonReceiver: system EmergencyButtonReceiver
+				{
+					Requirements::RequiredFuntions => 'Mobile Communication Access; Always-on; Incoming only; Alarm interfacing'; 
+				};								
+			connections 
+				ECTtoAPS_EmergencyControl: port ECT_EmergencyModule.WirelessPort -> RadioCommunication;			
+				ReceiveEmergencySignal: port MobileCommunication -> ECT_EmergencyButtonReceiver.EmergencySignal;								
+		end APSCommunication.impl;
+		
+	process EPBPushed
+		features
+			DataInPort: in data port;
+		properties		
+			Source_Language => (C);
+			Source_Text => ("Do_Something.c");	
+	end EPBPushed;
+	
+		process implementation EPBPushed.with_thread
+		end EPBPushed.with_thread;
+		
+	system TrafficModule
+		-- Traffic Module candidate is AIS
+		features
+			ControlPort: in out data port {Required_Connection => false;};
+			DataPort: in out data port  
+				{
+					Required_Connection => false;
+					AddedCommunicationProperties::Link_Technology => VHF;
+				}; -- Through a VHF antenna 
+			NavDataPort: out data port;
+			--WiFiPort: in out data port;
+		properties
+			AddedCommunicationProperties::Component_Cost => 2500.0 USD .. 5000.0 USD;
+	end TrafficModule;		
+	
+	system EmergencyModule
+		features
+			eth1: in out data port;
+			eth2: in out data port;
+			eth3: in out data port;
+			eth4: in out data port;	
+			WirelessPort: in out data port;	
+		flows
+			EmergencyNavigationFlow: flow sink WirelessPort;
+			EmergencyControlFlow: flow source WirelessPort;				
+	end EmergencyModule;
+	
+	system EmergencyButtonReceiver
+		features
+			EmergencySignal: in event port;
+		flows
+			EmergencyButtonFlow: flow sink EmergencySignal;	
+	end EmergencyButtonReceiver;
+	
+	system implementation EmergencyButtonReceiver.impl 			--SendEmergencySignal: port this_EmergencyCommunicationModule.EmergencySignalOut -> MobileCommunication.
+		subcomponents
+			this_EmergencyCommunicationModule: system EmergencyCommunicationModule;
+			this_EmergencyNotification: system EmergencyNotification;
+		connections
+			SendEmergencySignal: port EmergencySignal -> this_EmergencyCommunicationModule.EmergencySignalIn;
+			EmergencyNotificaionLink: port this_EmergencyCommunicationModule.EmergencySignalOut -> this_EmergencyNotification.EmergencySignalReceived;
+	end EmergencyButtonReceiver.impl;	
+	
+	system EmergencyNotification
+		features
+			EmergencySignalReceived: in event port;
+	end EmergencyNotification;
+	
+	system EmergencyCommunicationModule
+		features
+			EmergencySignalIn: in event port;
+			EmergencySignalOut: out event port;
+	end EmergencyCommunicationModule;
+	
+	
+	
+end ECT;

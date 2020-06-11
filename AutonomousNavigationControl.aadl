@@ -1,0 +1,270 @@
+package AutonomousNavigationControl
+public
+	--(Noted) with overall,APS, RCC, ECT, SSS, Ship, TIS,Stakeholder, CloudComponent, Mobile5GNetwork,Requirements;
+
+	--(Noted) system APSCommunicationArchitecture 
+	--(Noted) end APSCommunicationArchitecture;
+	--(Noted) 
+	--(Noted) 	--(Noted) system implementation APSCommunicationArchitecture.impl
+	--(Noted) 	--(Noted) subcomponents
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS: system APS::APSCommunication.impl;
+	--(Noted) 	--(Noted) 	--(Noted) APS_InternetModule: system APS::InternetModule;
+	--(Noted) 	--(Noted) 	--(Noted) APS_RCCAPSModule: system APS::RCCAPSModule;
+	--(Noted) 	--(Noted) 	--(Noted) APS_TrafficModule: system APS::TrafficModule;
+	--(Noted) 	--(Noted) 	--(Noted) APS_ShoreSensorModule: system APS::ShoreSensorModule;
+	--(Noted) 	--(Noted) 	--(Noted) EmergencyControlModule: system APS::EmergencyControlModule;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Switch_Main_CoreCommunication: system APS::Switch_Main_CoreCommunication {
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) Requirements::RequiredFuntions => 'VLANs; Inter-VLAN Routing; Packet Switching; Failover Redundancy';
+	--(Noted) 	--(Noted) 	--(Noted) };
+	--(Noted) 	--(Noted) 	--(Noted) APS_Switch_Backup_CoreCommunication: system APS::Switch_Backup_CoreCommunication {
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) Requirements::RequiredFuntions => 'VLANs; Inter-VLAN Routing; Packet Switching; Failover Redundancy';
+	--(Noted) 	--(Noted) 	--(Noted) };
+	--(Noted) 	--(Noted) 	--(Noted) APS_Switch_Main_CommDevices: system APS::Switch_Main_CommDevices;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Switch_Backup_CommDevices: system APS::Switch_Backup_CommDevices;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_ASC: system APS::ASC.impl;
+	--(Noted) 	--(Noted) 	--(Noted) APS_COLAVandSSITAW: system APS::COLAVandSSITAW.impl;
+	--(Noted) 	--(Noted) 	--(Noted) APS_ControlComputer_Backup: system APS::ControlComputer_Backup;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- %%%%% Internal Systems %%%%%
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_MachinerySystem: system APS::MachinerySystem.impl;
+	--(Noted) 	--(Noted) 	--(Noted) APS_IOCard1: device APS::IOCard;
+	--(Noted) 	--(Noted) 	--(Noted) APS_IOCard2: device APS::IOCard;
+	--(Noted) 	--(Noted) 	--(Noted) APS_AzimuthThruster1: device APS::AzimuthThruster;
+	--(Noted) 	--(Noted) 	--(Noted) APS_AzimuthThruster2: device APS::AzimuthThruster;
+	--(Noted) 	--(Noted) 	--(Noted) APS_AzimuthThruster3: device APS::AzimuthThruster;
+	--(Noted) 	--(Noted) 	--(Noted) APS_AzimuthThruster4: device APS::AzimuthThruster;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_NavigationSystem: system APS::NavigationSystem.impl;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Lidar1: device APS::Lidar;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Lidar2: device APS::Lidar;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Lidar3: device APS::Lidar;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Lidar4: device APS::Lidar;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Radar1: device APS::Radar;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Radar2: device APS::Radar;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Radar3: device APS::Radar;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Radar4: device APS::Radar;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Radar5: device APS::Radar;
+	--(Noted) 	--(Noted) 	--(Noted) APS_EO1: device APS::EO;
+	--(Noted) 	--(Noted) 	--(Noted) APS_EO2: device APS::EO;
+	--(Noted) 	--(Noted) 	--(Noted) APS_EO3: device APS::EO;
+	--(Noted) 	--(Noted) 	--(Noted) APS_EO4: device APS::EO;
+	--(Noted) 	--(Noted) 	--(Noted) APS_EO5: device APS::EO;
+	--(Noted) 	--(Noted) 	--(Noted) APS_DomeCamera1: device APS::DomeCamera;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_DomeCamera2: device DomeCamera2; Contact Egil regarding this connection (what does it mean a radio link to remote operator)
+	--(Noted) 	--(Noted) 	--(Noted) APS_IRCamera1: device APS::IRCamera;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_VideoCam1: device VideoCam1;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_Microphone1: device Microphone1;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_WeatherSensor: device WeatherSensor;
+	--(Noted) 	--(Noted) 	--(Noted) APS_SenseorSwitch: system APS::SenseorSwitch;
+	--(Noted) 	--(Noted) 	--(Noted) APS_SPU1: device APS::SPU_Top;
+	--(Noted) 	--(Noted) 	--(Noted) APS_SPU2: device APS::SPU_Hull;
+	--(Noted) 	--(Noted) 	--(Noted) APS_SPU3: device APS::SPU_Hull;
+	--(Noted) 	--(Noted) 	--(Noted) APS_SPU4: device APS::SPU_Hull;
+	--(Noted) 	--(Noted) 	--(Noted) APS_SPU5: device APS::SPU_Hull;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_NavigationSystemSGW: process NavigationSystemSGW;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- In PLANB the COLAVandSSITAW computer is considered part of the navigation system, 
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- it is connected between the sensor switch and the core switches. 	--(Noted) 	--(Noted) 	--(Noted)  
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --(PLANB)APS_COLAVandSSITAW: system COLAVandSSITAW;
+	--(Noted) 	--(Noted) 	--(Noted) APS_RTK_UHF: system APS::RTK_UHF;
+	--(Noted) 	--(Noted) 	--(Noted) APS_GNSSReceiver1: system APS::GNSSReceiver;
+	--(Noted) 	--(Noted) 	--(Noted) APS_GNSS_IMU_Main: system APS::GNSS_IMU_Main;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_NavigationSystem_Backup: system APS::NavigationSystem_Backup.impl;
+	--(Noted) 	--(Noted) 	--(Noted) APS_RTK_UHF_Backup: system APS::RTK_UHF;
+	--(Noted) 	--(Noted) 	--(Noted) APS_GNSSReceiver2: system APS::GNSSReceiver;
+	--(Noted) 	--(Noted) 	--(Noted) APS_GNSS_IMU_Backup: system APS::GNSS_IMU_Backup;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_SafetySystem: system APS::SafetySystem.impl;
+	--(Noted) 	--(Noted) 	--(Noted) APS_GeneralIOModule1: device APS::GeneralIOModule1;
+	--(Noted) 	--(Noted) 	--(Noted) APS_UserPanel1: device APS::UserPanel1;
+	--(Noted) 	--(Noted) 	--(Noted) APS_AnchorDrop1: device APS::AnchorDrop1;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Horn1: device APS::Horn1;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Alarm1: device APS::Alarm1;
+	--(Noted) 	--(Noted) 	--(Noted) APS_Lantern1: device APS::Lantern1;
+	--(Noted) 	--(Noted) 	--(Noted) APS_BMS: system APS::BMS.impl;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --APS_EmergencyButtonTransmitter: system APS::EmergencyButtonTransmitter.impl;
+	--(Noted) 	--(Noted) 	--(Noted) APS_EPB: device APS::EPB;
+	--(Noted) 	--(Noted) 	--(Noted) APS_EmergencyCommunicationModule: system APS::EmergencyCommunicationModule;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --RCC: system RCC::APSCommunication.impl;
+	--(Noted) 	--(Noted) 	--(Noted) RCC_InternetModule: system RCC::InternetModule;
+	--(Noted) 	--(Noted) 	--(Noted) RCC_RCCAPSModule: system RCC::RCCAPSModule;
+	--(Noted) 	--(Noted) 	--(Noted) RCC_TrafficModule: system RCC::TrafficModule;
+	--(Noted) 	--(Noted) 	--(Noted) RCC_ShoreSensorModule: system RCC::ShoreSensorModule;
+	--(Noted) 	--(Noted) 	--(Noted) RCC_ControlComputer_Main: system RCC::ControlComputer_Main;
+	--(Noted) 	--(Noted) 	--(Noted) RCC_ControlComputer_Backup: system RCC::ControlComputer_Backup;
+	--(Noted) 	--(Noted) 	--(Noted) RCC_Switch_Main_CommDevices: system RCC::Switch_Main_CommDevices;
+	--(Noted) 	--(Noted) 	--(Noted) RCC_Switch_Backup_CommDevices: system RCC::Switch_Backup_CommDevices;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --ECT: system ECT::APSCommunication.impl;
+	--(Noted) 	--(Noted) 	--(Noted) ECT_EmergencyModule: system ECT::EmergencyModule;
+	--(Noted) 	--(Noted) 	--(Noted) ECT_EmergencyButtonReceiver: system ECT::EmergencyButtonReceiver;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --SSS: system SSS::APSCommunication.impl;
+	--(Noted) 	--(Noted) 	--(Noted) SSS_ShoreSensorModule: system SSS::ShoreSensorModule;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --TIS: system TIS::APSCommunication.impl;
+	--(Noted) 	--(Noted) 	--(Noted) TIS_TrafficModule: system TIS::TrafficModule;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --Ship: system Ship::APSCommunication.impl;
+	--(Noted) 	--(Noted) 	--(Noted) Ship_TrafficModule: system Ship::TrafficModule;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --Stakeholder: system Stakeholder::APSCommunication.impl;
+	--(Noted) 	--(Noted) 	--(Noted) Stakeholder_APSStakeholder: system Stakeholder::APSStakeholder;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --CloudComponent: system CloudComponent::APSCommunication.impl;
+	--(Noted) 	--(Noted) 	--(Noted) CloudComponent_CommunicationHubServer: system CloudComponent::CommunicationHubServer.impl;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --Mobile5GNetwork: system Mobile5GNetwork::APSCommunication.impl {
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --	--(Noted) Requirements::RequiredFuntions => 'Reliable and secure delivery of data between the connected nodes' ;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --};
+	--(Noted) 	--(Noted) 	--(Noted) Mobile5GNetwork_Connection_5G: system Mobile5GNetwork::Connection_5G;
+	--(Noted) 	--(Noted) 	--(Noted) Mobile5GNetwork_Connection_5G_RCC: system Mobile5GNetwork::Connection_5G_RCC;
+	--(Noted) 	--(Noted) 	--(Noted) RCC_DPJoystic1: device RCC::DPJoystic1;
+	--(Noted) 	--(Noted) 	--(Noted) RCC_DPJoystic2: device RCC::DPJoystic2;
+	--(Noted) 	--(Noted) connections
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- %%%%% External Connections %%%%% 
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- %%%%% Internal Connections %%%%%
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- XXXXX Communication Devices Network XXXXX
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Main Links
+	--(Noted) 	--(Noted) 	--(Noted) Main_InternetToCommDevices: port APS_InternetModule.eth1 <-> APS_Switch_Main_CommDevices.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) Main_CommDevicesToRCC: port APS_Switch_Main_CommDevices.eth2 <-> APS_RCCAPSModule.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Different interface due to Traffic module special system design (AIS)
+	--(Noted) 	--(Noted) 	--(Noted) TrafficModuleToCommDevicesSwitch: port APS_TrafficModule.NavDataPort -> APS_Switch_Main_CommDevices.eth3;
+	--(Noted) 	--(Noted) 	--(Noted) Main_ShoreToCommDevicesSwitch: port APS_ShoreSensorModule.eth1 <-> APS_Switch_Main_CommDevices.eth4;
+	--(Noted) 	--(Noted) 	--(Noted) Main_CommDevicesToASC: port APS_Switch_Main_CommDevices.eth7 <-> APS_COLAVandSSITAW.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Backup Links
+	--(Noted) 	--(Noted) 	--(Noted) Backup_InternetToCommDevices: port APS_InternetModule.eth2 <-> APS_Switch_Backup_CommDevices.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CommDevicesToRCC: port APS_Switch_Backup_CommDevices.eth2 <-> APS_RCCAPSModule.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_ShoreToCommDevicesSwitch: port APS_ShoreSensorModule.eth2 <-> APS_Switch_Backup_CommDevices.eth4;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CommDevicesToASC: port APS_Switch_Backup_CommDevices.eth7 <-> APS_COLAVandSSITAW.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Redundancy links
+	--(Noted) 	--(Noted) 	--(Noted) MainToBackup_CommDevices: port APS_Switch_Main_CommDevices.RedundancyPort <-> APS_Switch_Backup_CommDevices.RedundancyPort;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- XXXXX Core Communication NetworkXXXXX
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Main Links	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) Main_CoreToASC: port APS_Switch_Main_CoreCommunication.eth1 <-> APS_COLAVandSSITAW.eth3;
+	--(Noted) 	--(Noted) 	--(Noted) Main_CoreToNavigation: port APS_Switch_Main_CoreCommunication.eth3 <-> APS_SenseorSwitch.eth8;
+	--(Noted) 	--(Noted) 	--(Noted) Main_CoreToNavigation2: port APS_Switch_Main_CoreCommunication.eth9 <-> APS_GNSS_IMU_Main.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) Main_CoreToNavigation_Backup: port APS_Switch_Main_CoreCommunication.eth8 <-> APS_GNSS_IMU_Backup.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) Main_CoreToMachinery: port APS_Switch_Main_CoreCommunication.eth4 <-> APS_IOCard1.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) Main_CoreToMachinery2: port APS_Switch_Main_CoreCommunication.eth5 <-> APS_IOCard2.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) Main_CoreToSafety: port APS_Switch_Main_CoreCommunication.eth6 <-> APS_GeneralIOModule1.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) Main_CoreToBMS: port APS_Switch_Main_CoreCommunication.eth7 <-> APS_BMS.MainDataPort;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Backup Links	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CoreToASC: port APS_Switch_Backup_CoreCommunication.eth1 <-> APS_COLAVandSSITAW.eth4;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CoreToNavigation: port APS_Switch_Backup_CoreCommunication.eth3 <-> APS_SenseorSwitch.eth7;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CoreToNavigation2: port APS_Switch_Backup_CoreCommunication.eth9 <-> APS_GNSS_IMU_Main.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CoreToNavigation_Backup: port APS_Switch_Backup_CoreCommunication.eth8 <-> APS_GNSS_IMU_Backup.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CoreToMachinery: port APS_Switch_Backup_CoreCommunication.eth4 <-> APS_IOCard1.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CoreToMachinery2: port APS_Switch_Backup_CoreCommunication.eth7 <-> APS_IOCard2.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CoreToSafety: port APS_Switch_Backup_CoreCommunication.eth5 <-> APS_GeneralIOModule1.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CoreToBMS: port APS_Switch_Backup_CoreCommunication.eth6 <-> APS_BMS.BackupDataPort;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Redundancy links
+	--(Noted) 	--(Noted) 	--(Noted) MainToBackup_Core: port APS_Switch_Main_CoreCommunication.RedundancyPort <-> APS_Switch_Backup_CoreCommunication.RedundancyPort;
+	--(Noted) 	--(Noted) 	--(Noted) ASCToEmergencyModule: port APS_ControlComputer_Backup.EmergencyPort <-> EmergencyControlModule.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection3: port APS_ControlComputer_Backup.eth1 <-> APS_Switch_Main_CommDevices.eth8;
+	--(Noted) 	--(Noted) 	--(Noted) Main_CoreToASC2: port APS_ControlComputer_Backup.eth3 <-> APS_Switch_Main_CoreCommunication.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) Backup_CoreToASC2: port APS_Switch_Backup_CoreCommunication.eth2 <-> APS_ControlComputer_Backup.eth4;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection5: port APS_ControlComputer_Backup.eth2 <-> APS_Switch_Backup_CommDevices.eth8;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Backup Navigation System	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_Backup_impl_new_connection: port APS_RTK_UHF_Backup.DataOut -> APS_GNSS_IMU_Backup.RTK_UHF_DataIn;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_Backup_impl_new_connection2: port APS_GNSSReceiver2.DataPort -> APS_GNSS_IMU_Backup.GNSSSignalIn;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Safety System
+	--(Noted) 	--(Noted) 	--(Noted) UserPanel1toGeneralIOModule1: port APS_UserPanel1.Output -> APS_GeneralIOModule1.Input1;
+	--(Noted) 	--(Noted) 	--(Noted) GeneralIOModule1toAnchorDrop1: port APS_GeneralIOModule1.Output1 -> APS_AnchorDrop1.Input;
+	--(Noted) 	--(Noted) 	--(Noted) GeneralIOModule1toHorn1: port APS_GeneralIOModule1.Output2 -> APS_Horn1.Input;
+	--(Noted) 	--(Noted) 	--(Noted) GeneralIOModule1toAlarm1: port APS_GeneralIOModule1.Output3 -> APS_Alarm1.Input;
+	--(Noted) 	--(Noted) 	--(Noted) GeneralIOModule1toLantern1: port APS_GeneralIOModule1.Output4 -> APS_Lantern1.Input;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Machinery System
+	--(Noted) 	--(Noted) 	--(Noted) MachinerySystem_impl_new_connection: port APS_IOCard1.SignalPort1 -> APS_AzimuthThruster1.SignalPort;
+	--(Noted) 	--(Noted) 	--(Noted) MachinerySystem_impl_new_connection2: port APS_IOCard1.SignalPort2 -> APS_AzimuthThruster2.SignalPort;
+	--(Noted) 	--(Noted) 	--(Noted) MachinerySystem_impl_new_connection3: port APS_IOCard2.SignalPort1 -> APS_AzimuthThruster3.SignalPort;
+	--(Noted) 	--(Noted) 	--(Noted) MachinerySystem_impl_new_connection4: port APS_IOCard2.SignalPort2 -> APS_AzimuthThruster4.SignalPort;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Navigation System
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection5: port APS_SPU1.eth5 <-> APS_SenseorSwitch.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection9: port APS_SPU2.eth5 <-> APS_SenseorSwitch.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection13: port APS_SPU3.eth5 <-> APS_SenseorSwitch.eth3;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection17: port APS_SPU4.eth5 <-> APS_SenseorSwitch.eth4;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection18: port APS_EO5.DataPort <-> APS_SPU5.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection19: port APS_Lidar4.DataPort <-> APS_SPU5.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection21: port APS_SPU5.eth5 <-> APS_SenseorSwitch.eth5;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection23: port APS_GNSSReceiver1.DataPort -> APS_GNSS_IMU_Main.GNSSSignalIn;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection24: port APS_RTK_UHF.DataOut -> APS_GNSS_IMU_Main.RTK_UHF_DataIn;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection37: port APS_SPU1.eth4 <-> APS_Radar1.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection38: port APS_SPU1.eth3 <-> APS_IRCamera1.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection39: port APS_SPU1.eth1 <-> APS_DomeCamera1.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection40: port APS_SPU1.eth2 <-> APS_EO1.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection41: port APS_SPU2.eth1 <-> APS_EO2.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection42: port APS_SPU2.eth2 <-> APS_Lidar1.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection43: port APS_SPU2.eth3 <-> APS_Radar2.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection44: port APS_SPU3.eth1 <-> APS_EO3.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection45: port APS_SPU3.eth2 <-> APS_Lidar2.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection46: port APS_SPU3.eth3 <-> APS_Radar3.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection47: port APS_SPU4.eth1 <-> APS_EO4.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection48: port APS_SPU4.eth2 <-> APS_Lidar3.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection49: port APS_SPU4.eth3 <-> APS_Radar4.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationSystem_impl_new_connection52: port APS_SPU5.eth3 <-> APS_Radar5.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- Emergency Button
+	--(Noted) 	--(Noted) 	--(Noted) ButtonPushComm: port APS_EPB.ButtonPressed -> APS_EmergencyCommunicationModule.EmergencySignalIn;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- %%%% RCC
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection: port RCC_ShoreSensorModule.eth1 <-> RCC_Switch_Backup_CommDevices.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection2: port RCC_RCCAPSModule.eth1 <-> RCC_Switch_Backup_CommDevices.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) RCCAPSCommunication_impl_new_connection3: port RCC_RCCAPSModule.eth2 <-> RCC_Switch_Main_CommDevices.eth2;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection4: port RCC_InternetModule.eth1 <-> RCC_Switch_Backup_CommDevices.eth3;
+	--(Noted) 	--(Noted) 	--(Noted) RCCAPSCommunication_impl_new_connection5: port RCC_InternetModule.eth2 <-> RCC_Switch_Main_CommDevices.eth3;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection8: port RCC_ControlComputer_Main.eth2 <-> RCC_Switch_Main_CommDevices.eth5;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection11: port RCC_ControlComputer_Main.eth1 <-> RCC_Switch_Backup_CommDevices.eth5;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection12: port RCC_ControlComputer_Backup.eth2 <-> RCC_Switch_Main_CommDevices.eth6;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection13: port RCC_ControlComputer_Backup.eth1 <-> RCC_Switch_Backup_CommDevices.eth6;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection10: port RCC_DPJoystic1.SignalPort -> RCC_ControlComputer_Main.SignalPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection14: port RCC_DPJoystic2.SignalPort -> RCC_ControlComputer_Backup.SignalPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection6: port RCC_ShoreSensorModule.eth2 <-> RCC_Switch_Main_CommDevices.eth1;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunication_impl_new_connection9: port RCC_Switch_Backup_CommDevices.RedundancyPort <-> RCC_Switch_Main_CommDevices.RedundancyPort;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- %%%% ECT
+	--(Noted) 	--(Noted) 	--(Noted) ECTtoAPS_EmergencyControl: port ECT_EmergencyModule.WirelessPort -> EmergencyControlModule.WirelessPort;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) -- %%%% External Connections
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) --	--(Noted) APS - ECT
+	--(Noted) 	--(Noted) 	--(Noted) SendEmergencySignal: port APS_EmergencyCommunicationModule.EmergencySignalOut -> ECT_EmergencyButtonReceiver.EmergencySignal;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection: port SSS_ShoreSensorModule.DataPort <-> APS_ShoreSensorModule.ControlPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection2: port SSS_ShoreSensorModule.DataPort <-> RCC_ShoreSensorModule.WirelessPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection3: port RCC_RCCAPSModule.WirelessPort <-> APS_RCCAPSModule.WirelessPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection4: port RCC_TrafficModule.DataPort <-> APS_TrafficModule.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection5: port Ship_TrafficModule.DataPort <-> APS_TrafficModule.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection6: port TIS_TrafficModule.DataPort <-> APS_TrafficModule.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection7: port Ship_TrafficModule.DataPort <-> RCC_TrafficModule.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection8: port TIS_TrafficModule.DataPort <-> RCC_TrafficModule.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection9: port Stakeholder_APSStakeholder.DataPort <-> CloudComponent_CommunicationHubServer.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection10: port Mobile5GNetwork_Connection_5G.ServerConnection <-> CloudComponent_CommunicationHubServer.DataPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection11: port Mobile5GNetwork_Connection_5G_RCC.ServerConnection <-> CloudComponent_CommunicationHubServer.DataPort;
+	--(Noted)  	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection12: port Mobile5GNetwork_Connection_5G.ClientConnection <-> APS_InternetModule.UplinkDownlinkPort;
+	--(Noted) 	--(Noted) 	--(Noted) APSCommunicationArchitecture_impl_new_connection13: port Mobile5GNetwork_Connection_5G_RCC.ClientConnection -> RCC_InternetModule.UplinkDownlinkPort;
+	--(Noted) 	--(Noted) flows
+	--(Noted) 	--(Noted) 	--(Noted) --APS_Lidar1Flow: end to end flow APS_Lidar1.LidarFlow -> NavigationSystem_impl_new_connection42 -> APS_SPU2.LidarFlow -> NavigationSystem_impl_new_connection9 -> 
+	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) --NavigationFlow_Main_Primary: end to end flow APS_NavigationSystem.NavigationData_Sesors_Main -> Main_CoreToNavigation -> APS_Switch_Main_CoreCommunication.NavigationFlow_Main_Primary -> Main_CoreToASC -> APS_ASC.IncomingNavigationData_Main_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --NavigationFlow_Main_Secondary: end to end flow APS_NavigationSystem.NavigationData_Sesors_Main -> Main_CoreToNavigation -> APS_Switch_Main_CoreCommunication.NavigationFlow_Main_Secondary -> Main_CoreToASC2 -> APS_ASC.IncomingNavigationData_Main_Secondary;
+	--(Noted) 	--(Noted) 	--(Noted) --NavigationFlow2_Main_Primary: end to end flow APS_NavigationSystem.NavigationData_GNSS_Main -> Main_CoreToNavigation2 -> APS_Switch_Main_CoreCommunication.NavigationFlow2_Main_Primary -> Main_CoreToASC -> APS_ASC.IncomingNavigationData_Main_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --NavigationFlow2_Main_Secondary: end to end flow APS_NavigationSystem.NavigationData_GNSS_Main -> Main_CoreToNavigation2 -> APS_Switch_Main_CoreCommunication.NavigationFlow2_Main_Secondary -> Main_CoreToASC2 -> APS_ASC.IncomingNavigationData_Main_Secondary;
+	--(Noted) 	--(Noted) 	--(Noted)  
+	--(Noted) 	--(Noted) 	--(Noted) NavigationFlow_Backup_Primary: end to end flow APS_GNSS_IMU_Backup.GNSSInformation_Primary -> Main_CoreToNavigation_Backup -> APS_Switch_Main_CoreCommunication.NavigationFlow_Backup_Primary -> Main_CoreToASC -> APS_COLAVandSSITAW.NavigationFlow_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) NavigationFlow_Backup_Secondary: end to end flow APS_GNSS_IMU_Backup.GNSSInformation_Secondary -> Backup_CoreToNavigation_Backup -> APS_Switch_Backup_CoreCommunication.NavigationFlow_Backup_Secondary -> Backup_CoreToASC2 -> APS_ControlComputer_Backup.NavigationFlow_Backup;	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) --MachinaryFlow_Main_Primary: end to end flow APS_MachinerySystem.MachineryData_Main_Primary -> Main_CoreToMachinery -> APS_Switch_Main_CoreCommunication.MachinaryFlow_Main_Primary -> Main_CoreToASC -> APS_ASC.IncomingSafetyData_Main_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --MachinaryFlow_Main_Secondary: end to end flow APS_MachinerySystem.MachineryData_Main_Primary -> Main_CoreToMachinery -> APS_Switch_Main_CoreCommunication.MachinaryFlow_Main_Secondary -> Main_CoreToASC2 -> APS_ASC.IncomingMachinaryData_Main_Secondary;
+	--(Noted) 	--(Noted) 	--(Noted) --MachinaryFlow_Backup_Primary: end to end flow APS_MachinerySystem.MachineryData_Main_Secondary -> Main_CoreToMachinery2 -> APS_Switch_Main_CoreCommunication.MachinaryFlow_Backup_Primary -> Main_CoreToASC -> APS_ASC.IncomingMachinaryData_Main_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --MachinaryFlow_Backup_Secondary: end to end flow APS_MachinerySystem.MachineryData_Main_Secondary -> Main_CoreToMachinery2 -> APS_Switch_Main_CoreCommunication.MachinaryFlow_Backup_Secondary -> Main_CoreToASC2 -> APS_ASC.IncomingMachinaryData_Main_Secondary;
+	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) --SafetyFlow_Main_Primary: end to end flow APS_SafetySystem.SafetyData_Main -> Main_CoreToSafety -> APS_Switch_Main_CoreCommunication.SafetyFlow_Main_Primary -> Main_CoreToASC -> APS_ASC.IncomingSafetyData_Main_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --SafetyFlow_Main_Secondary: end to end flow APS_SafetySystem.SafetyData_Main -> Main_CoreToSafety -> APS_Switch_Main_CoreCommunication.SafetyFlow_Main_Secondary -> Main_CoreToASC2 -> APS_ASC.IncomingSafetyData_Main_Secondary;
+
+	--(Noted) 	--(Noted) 	--(Noted) --BMSFlow_Main_Primary: end to end flow APS_BMS.PowerData_Main -> Main_CoreToBMS -> APS_Switch_Main_CoreCommunication.BMSFlow_Main_Primary -> Main_CoreToASC -> APS_ASC.IncomingPowerData_APS_Main_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --BMSFlow_Main_Secondary: end to end flow APS_BMS.PowerData_Main -> Main_CoreToBMS -> APS_Switch_Main_CoreCommunication.BMSFlow_Main_Secondary -> Main_CoreToASC2 -> APS_ASC.IncomingPowerData_APS_Main_Secondary;
+	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_NavigationFlow_Main_Primary: end to end flow APS_NavigationSystem.NavigationData_Sesors_Backup -> Backup_CoreToNavigation -> APS_Switch_Backup_CoreCommunication.NavigationFlow_Main_Primary -> Backup_CoreToASC -> APS_ASC.IncomingNavigationData_Backup_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_NavigationFlow_Main_Secondary: end to end flow APS_NavigationSystem.NavigationData_Sesors_Backup -> Backup_CoreToNavigation -> APS_Switch_Backup_CoreCommunication.NavigationFlow_Main_Secondary -> Backup_CoreToASC2 -> APS_ASC.IncomingNavigationData_Backup_Secondary;
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_NavigationFlow2_Main_Primary: end to end flow APS_NavigationSystem.NavigationData_GNSS_Backup -> Backup_CoreToNavigation2 -> APS_Switch_Backup_CoreCommunication.NavigationFlow2_Main_Primary -> Backup_CoreToASC -> APS_ASC.IncomingNavigationData_Backup_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_NavigationFlow2_Main_Secondary: end to end flow APS_NavigationSystem.NavigationData_GNSS_Backup -> Backup_CoreToNavigation2 -> APS_Switch_Backup_CoreCommunication.NavigationFlow2_Main_Secondary -> Backup_CoreToASC2 -> APS_ASC.IncomingNavigationData_Backup_Secondary;
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_NavigationFlow_Backup_Primary: end to end flow APS_NavigationSystem_Backup.NavigationData_Backup_Secondary -> Backup_CoreToNavigation_Backup -> APS_Switch_Backup_CoreCommunication.NavigationFlow_Backup_Primary -> Backup_CoreToASC -> APS_ASC.IncomingNavigationData_Backup_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_NavigationFlow_Backup_Secondary: end to end flow APS_NavigationSystem_Backup.NavigationData_Backup_Secondary -> Backup_CoreToNavigation_Backup -> APS_Switch_Backup_CoreCommunication.NavigationFlow_Backup_Secondary -> Backup_CoreToASC2 -> APS_ASC.IncomingNavigationData_Backup_Secondary;
+	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_MachinaryFlow_Main_Primary: end to end flow APS_MachinerySystem.MachineryData_Backup_Primary -> Backup_CoreToMachinery -> APS_Switch_Backup_CoreCommunication.MachinaryFlow_Main_Primary -> Backup_CoreToASC -> APS_ASC.IncomingMachinaryData_Backup_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_MachinaryFlow_Main_Secondary: end to end flow APS_MachinerySystem.MachineryData_Backup_Primary -> Backup_CoreToMachinery -> APS_Switch_Backup_CoreCommunication.MachinaryFlow_Main_Secondary -> Backup_CoreToASC2 -> APS_ASC.IncomingMachinaryData_Backup_Secondary;
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_MachinaryFlow_Backup_Primary: end to end flow APS_MachinerySystem.MachineryData_Backup_Secondary -> Backup_CoreToMachinery2 -> APS_Switch_Backup_CoreCommunication.MachinaryFlow_Backup_Primary -> Backup_CoreToASC -> APS_ASC.IncomingMachinaryData_Backup_Primary;
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_MachinaryFlow_Backup_Secondary: end to end flow APS_MachinerySystem.MachineryData_Backup_Secondary -> Backup_CoreToMachinery2 -> APS_Switch_Backup_CoreCommunication.MachinaryFlow_Backup_Secondary -> Backup_CoreToASC2 -> APS_ASC.IncomingMachinaryData_Backup_Secondary;
+	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_SafetyFlow_Main_Primary: end to end flow APS_SafetySystem.SafetyData_Backup -> Backup_CoreToSafety -> APS_Switch_Backup_CoreCommunication.SafetyFlow_Main_Primary -> Backup_CoreToASC -> APS_ASC.IncomingSafetyData_Backup_Primary;	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_SafetyFlow_Main_Secondary: end to end flow APS_SafetySystem.SafetyData_Backup -> Backup_CoreToSafety -> APS_Switch_Backup_CoreCommunication.SafetyFlow_Main_Secondary -> Backup_CoreToASC2 -> APS_ASC.IncomingSafetyData_Backup_Secondary;	--(Noted) 	--(Noted) 
+
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_BMSFlow_Main_Primary: end to end flow APS_BMS.PowerData_Backup -> Backup_CoreToBMS -> APS_Switch_Backup_CoreCommunication.BMSFlow_Main_Primary -> Backup_CoreToASC -> APS_ASC.IncomingPowerData_APS_Backup_Primary;	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 	--(Noted) 	--(Noted) --Backup_BMSFlow_Main_Secondary: end to end flow APS_BMS.PowerData_Backup -> Backup_CoreToBMS -> APS_Switch_Backup_CoreCommunication.BMSFlow_Main_Secondary -> Backup_CoreToASC2 -> APS_ASC.IncomingPowerData_APS_Backup_Secondary;	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) end APSCommunicationArchitecture.impl;	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 	--(Noted) 
+	--(Noted) 
+end AutonomousNavigationControl;
