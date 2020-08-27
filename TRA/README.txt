@@ -1,0 +1,1 @@
+In this folder you can find several documents related to different activities related to Risk Managemnt for the proposed communication architecture such as Threat and Risk analysis as well as safety and security co-analysis. 
