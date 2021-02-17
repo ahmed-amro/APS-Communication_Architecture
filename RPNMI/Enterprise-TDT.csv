@@ -1,0 +1,526 @@
+number; name; kill_chain_phases; platforms;Technologies;Additions;CVSS_Exp;PR_V;AC_V;UI_V;AV_V
+1;Network Device CLI; ['execution']; ['Network'];;;1,83457659;0,62;0,77;0,85;0,55
+2;Network Device Configuration Dump; ['collection']; ['Network'];;;1,234707705;0,27;0,77;0,85;0,85
+3;TFTP Boot; ['defense-evasion', 'persistence']; ['Network'];;;0,798928515;0,27;0,77;0,85;0,55
+4;ROMMONkit; ['defense-evasion', 'persistence']; ['Network'];;;1,234707705;0,27;0,77;0,85;0,85
+5;SNMP (MIB Dump); ['collection']; ['Network'];;;1,234707705;0,27;0,77;0,85;0,85
+6;Data from Configuration Repository; ['collection']; ['Network'];;;1,234707705;0,27;0,77;0,85;0,85
+7;Downgrade System Image; ['defense-evasion']; ['Network'];;;0,798928515;0,27;0,77;0,85;0,55
+8;Patch System Image; ['defense-evasion']; ['Network'];;;0,798928515;0,27;0,77;0,85;0,55
+9;Modify System Image; ['defense-evasion']; ['Network'];;;0,798928515;0,27;0,77;0,85;0,55
+10;Disable Crypto Hardware; ['defense-evasion']; ['Network'];;;0,798928515;0,27;0,77;0,85;0,55
+11;Reduce Key Space; ['defense-evasion']; ['Network'];;;0,798928515;0,27;0,77;0,85;0,55
+12;Weaken Encryption; ['defense-evasion']; ['Network'];;;0,798928515;0,27;0,77;0,85;0,55
+13;Network Device Authentication; ['credential-access', 'defense-evasion']; ['Network'];;;0,582747858;0,27;0,77;0,62;0,55
+14;Network Address Translation Traversal; ['defense-evasion']; ['Network'];;;1,234707705;0,27;0,77;0,85;0,85
+15;Network Boundary Bridging; ['defense-evasion']; ['Network'];;;1,234707705;0,27;0,77;0,85;0,85
+16;Traffic Duplication; ['exfiltration']; ['Network'];;;1,234707705;0,27;0,77;0,85;0,85
+17;ARP Cache Poisoning; ['credential-access', 'collection']; ['Linux', 'Windows', 'macOS'];;;2,83525473;0,62;0,77;0,85;0,85
+18;Vulnerabilities; ['resource-development']; ['PRE'];;;2,515145325;0,85;0,77;0,85;0,55
+19;Systemd Timers; ['execution', 'persistence', 'privilege-escalation']; ['Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+20;Disable Cloud Logs; ['defense-evasion']; ['GCP', 'Azure', 'AWS'];;;1,83457659;0,62;0,77;0,85;0,55
+21;Print Processors; ['persistence', 'privilege-escalation']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+22;Spearphishing Link; ['reconnaissance']; ['PRE'];;;2,83525473;0,85;0,77;0,62;0,85
+23;Spearphishing Attachment; ['reconnaissance']; ['PRE'];;;2,83525473;0,85;0,77;0,62;0,85
+24;Spearphishing Service; ['reconnaissance']; ['PRE'];;;2,83525473;0,85;0,77;0,62;0,85
+25;Phishing for Information; ['reconnaissance']; ['PRE'];;;2,83525473;0,85;0,77;0,62;0,85
+26;Purchase Technical Data; ['reconnaissance']; ['PRE'];;;2,2211673;0,85;0,44;0,85;0,85
+27;Threat Intel Vendors; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+28;Search Closed Sources; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+29;Scan Databases; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+30;CDNs; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+31;Digital Certificates; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+32;DNS/Passive DNS; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+33;WHOIS; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+34;Search Open Technical Databases; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+35;Vulnerability Scanning; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+36;Scanning IP Blocks; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+37;Active Scanning; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+38;Search Victim-Owned Websites; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+39;Search Engines; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+40;Social Media; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+41;Search Open Websites/Domains; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+42;Client Configurations; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+43;Firmware; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+44;Software; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+45;Hardware; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+46;Gather Victim Host Information; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+47;Identify Roles; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+48;Identify Business Tempo; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+49;Determine Physical Locations; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+50;Business Relationships; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+51;Gather Victim Org Information; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+52;Network Security Appliances; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+53;IP Addresses; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+54;Network Topology; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+55;Network Trust Dependencies; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+56;DNS; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+57;Domain Properties; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+58;Gather Victim Network Information; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+59;Employee Names; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+60;Email Addresses; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+61;Credentials; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+62;Gather Victim Identity Information; ['reconnaissance']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+63;Exploits; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+64;Digital Certificates; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+65;Code Signing Certificates; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+66;Tool; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+67;Malware; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+68;Obtain Capabilities; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+69;Exploits; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+70;Digital Certificates; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+71;Code Signing Certificates; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+72;Malware; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+73;Develop Capabilities; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+74;Email Accounts; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+75;Social Media Accounts; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+76;Compromise Accounts; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+77;Email Accounts; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+78;Social Media Accounts; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+79;Establish Accounts; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+80;Web Services; ['resource-development']; ['PRE'];;;2,83525473;0,85;0,77;0,62;0,85
+81;Botnet; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+82;Server; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+83;Virtual Private Server; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+84;DNS Server; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+85;Domains; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+86;Web Services; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+87;Botnet; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+88;Server; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+89;Virtual Private Server; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+90;DNS Server; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+91;Compromise Infrastructure; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+92;Domains; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+93;Acquire Infrastructure; ['resource-development']; ['PRE'];;;3,887042775;0,85;0,77;0,85;0,85
+94;VBA Stomping; ['defense-evasion']; ['Linux', 'Windows', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+95;AS-REP Roasting; ['credential-access']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+96;Cloud Infrastructure Discovery; ['discovery']; ['AWS', 'Azure', 'GCP'];;;1,83457659;0,62;0,77;0,85;0,55
+97;Verclsid; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+98;Port Knocking; ['defense-evasion', 'persistence', 'command-and-control']; ['Linux', 'macOS', 'Windows', 'Network'];;;2,83525473;0,62;0,77;0,85;0,85
+99;Run Virtual Instance; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+100;Hidden File System; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+101;Pluggable Authentication Modules; ['credential-access', 'defense-evasion']; ['Linux', 'macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+102;COR_PROFILER; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+103;Disable or Modify Cloud Firewall; ['defense-evasion']; ['AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+104;SSH Authorized Keys; ['persistence']; ['Linux', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+105;Environmental Keying; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+106;JavaScript/JScript; ['execution']; ['Windows', 'macOS', 'Linux'];;;1,338161748;0,62;0,77;0,62;0,55
+107;Revert Cloud Instance; ['defense-evasion']; ['AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+108;Delete Cloud Instance; ['defense-evasion']; ['AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+109;Create Snapshot; ['defense-evasion']; ['AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+110;Create Cloud Instance; ['defense-evasion']; ['AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+111;MSBuild; ['defense-evasion']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+112;Indicator Removal from Tools; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+113;Indicator Blocking; ['defense-evasion']; ['Windows', 'macOS', 'Linux'];;;2,515145325;0,85;0,77;0,85;0,55
+114;Asymmetric Cryptography; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+115;Symmetric Cryptography; ['command-and-control']; ['Linux', 'Windows', 'macOS'];;;3,887042775;0,85;0,77;0,85;0,85
+116;Encrypted Channel; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+117;Compile After Delivery; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+118;Dylib Hijacking; ['persistence', 'privilege-escalation', 'defense-evasion']; ['macOS'];;;2,515145325;0,85;0,77;0,85;0,55
+119;Component Object Model Hijacking; ['privilege-escalation', 'persistence']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+120;DNS; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+121;Mail Protocols; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+122;File Transfer Protocols; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+123;Web Protocols; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+124;Protocol Tunneling; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+125;Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+126;Exfiltration Over Asymmetric Encrypted Non-C2 Protocol; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+127;Exfiltration Over Symmetric Encrypted Non-C2 Protocol; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+128;Protocol Impersonation; ['command-and-control']; ['Linux', 'Windows', 'macOS'];;;3,887042775;0,85;0,77;0,85;0,85
+129;Steganography; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+130;Junk Data; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+131;Non-Standard Encoding; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+132;Standard Encoding; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+133;Domain Fronting; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+134;Multi-hop Proxy; ['command-and-control']; ['Linux', 'macOS', 'Windows', 'Network'];;;3,887042775;0,85;0,77;0,85;0,85
+135;External Proxy; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+136;Internal Proxy; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+137;One-Way Communication; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+138;Bidirectional Communication; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+139;Dead Drop Resolver; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+140;Non-Standard Port; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+141;Remote Data Staging; ['collection']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure'];;;3,887042775;0,85;0,77;0,85;0,85
+142;Local Data Staging; ['collection']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+143;Cloud Accounts; ['defense-evasion', 'persistence', 'privilege-escalation', 'initial-access']; ['AWS', 'GCP', 'Azure', 'SaaS', 'Azure AD', 'Office 365'];;;1,83457659;0,62;0,77;0,85;0,55
+144;NTFS File Attributes; ['defense-evasion']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+145;Hidden Window; ['defense-evasion']; ['macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+146;Local Accounts; ['defense-evasion', 'persistence', 'privilege-escalation', 'initial-access']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+147;Domain Accounts; ['defense-evasion', 'persistence', 'privilege-escalation', 'initial-access']; ['Linux', 'macOS', 'Windows'];;;1,04832948;0,62;0,44;0,85;0,55
+148;Default Accounts; ['defense-evasion', 'persistence', 'privilege-escalation', 'initial-access']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+149;Hidden Users; ['defense-evasion']; ['macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+150;LD_PRELOAD; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Linux'];;;2,515145325;0,85;0,77;0,85;0,55
+151;DLL Side-Loading; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+152;DLL Search Order Hijacking; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+153;Path Interception by Search Order Hijacking; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+154;Path Interception by PATH Environment Variable; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+155;Path Interception by Unquoted Path; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+156;Services Registry Permissions Weakness; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+157;Executable Installer File Permissions Weakness; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+158;Services File Permissions Weakness; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+159;Hijack Execution Flow; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+160;Local Groups; ['discovery']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+161;Lateral Tool Transfer; ['lateral-movement']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+162;DNS Calculation; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+163;Malicious File; ['execution']; ['Linux', 'macOS', 'Windows'];;;1,338161748;0,62;0,77;0,62;0,55
+164;Malicious Link; ['execution']; ['Linux', 'macOS', 'Windows'];;;1,338161748;0,62;0,77;0,62;0,55
+165;Compromise Hardware Supply Chain; ['initial-access']; ['Linux', 'macOS', 'Windows'];;;0,9145983;0,85;0,77;0,85;0,2
+166;Compromise Software Supply Chain; ['initial-access']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+167;Compromise Software Dependencies and Development Tools; ['initial-access']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+168;Fast Flux DNS; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+169;Exfiltration over USB; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,85;0,77;0,62;0,55
+170;Service Execution; ['execution']; ['Windows'];;;1,234707705;0,27;0,77;0,85;0,85
+171;Launchctl; ['execution']; ['macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+172;System Services; ['execution']; ['Windows', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+173;Domain Generation Algorithms; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+174;Dynamic Resolution; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+175;Exfiltration Over Bluetooth; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+176;Exfiltration to Cloud Storage; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+177;Exfiltration to Code Repository; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+178;Python; ['execution']; ['Linux', 'Windows', 'macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+179;Visual Basic; ['execution']; ['Windows', 'macOS', 'Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+180;Unix Shell; ['execution']; ['macOS', 'Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+181;Windows Command Shell; ['execution']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+182;AppleScript; ['execution']; ['macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+183;PowerShell; ['execution']; ['Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+184;Exfiltration Over Web Service; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+185;Time Based Evasion; ['defense-evasion', 'discovery']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+186;User Activity Based Checks; ['defense-evasion', 'discovery']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+187;System Checks; ['defense-evasion', 'discovery']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+188;Reflection Amplification; ['impact']; ['macOS', 'Windows', 'Linux', 'AWS', 'Office 365', 'Azure AD', 'GCP', 'Azure', 'SaaS'];;;3,887042775;0,85;0,77;0,85;0,85
+189;Direct Network Flood; ['impact']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure AD', 'SaaS', 'Azure', 'Office 365'];;;3,887042775;0,85;0,77;0,85;0,85
+190;Spearphishing via Service; ['initial-access']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,85;0,77;0,62;0,55
+191;Spearphishing Link; ['initial-access']; ['Linux', 'macOS', 'Windows', 'Office 365', 'SaaS'];;;2,83525473;0,85;0,77;0,62;0,85
+192;Spearphishing Attachment; ['initial-access']; ['macOS', 'Windows', 'Linux'];;;2,83525473;0,85;0,77;0,62;0,85
+193;Phishing; ['initial-access']; ['Linux', 'macOS', 'Windows', 'SaaS', 'Office 365'];;;2,83525473;0,85;0,77;0,62;0,85
+194;Runtime Data Manipulation; ['impact']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+195;Transmitted Data Manipulation; ['impact']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+196;Stored Data Manipulation; ['impact']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+197;Data Manipulation; ['impact']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+198;Hidden Files and Directories; ['defense-evasion']; ['Windows', 'macOS', 'Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+199;Hide Artifacts; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+200;RDP Hijacking; ['lateral-movement']; ['Windows'];;;0,900610326;0,27;0,77;0,62;0,85
+201;SSH Hijacking; ['lateral-movement']; ['Linux', 'macOS'];;;0,582747858;0,27;0,77;0,62;0,55
+202;Remote Service Session Hijacking; ['lateral-movement']; ['Linux', 'macOS', 'Windows'];;;1,234707705;0,27;0,77;0,85;0,85
+203;Security Software Discovery; ['discovery']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+204;Cloud Groups; ['discovery']; ['Office 365', 'Azure AD', 'GCP', 'SaaS', 'Azure', 'AWS'];;;1,83457659;0,62;0,77;0,85;0,55
+205;Domain Groups; ['discovery']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+206;Cloud Account; ['discovery']; ['AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+207;Email Account; ['discovery']; ['Windows', 'Office 365'];;;1,83457659;0,62;0,77;0,85;0,55
+208;Domain Account; ['discovery']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+209;Local Account; ['discovery']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+210;Install Root Certificate; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,338161748;0,62;0,77;0,62;0,55
+211;Disable or Modify System Firewall; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+212;Impair Command History Logging; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+213;Disable Windows Event Logging; ['defense-evasion']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+214;Disable or Modify Tools; ['defense-evasion']; ['Windows', 'macOS', 'Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+215;Impair Defenses; ['defense-evasion']; ['Linux', 'Windows', 'macOS', 'AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+216;LSA Secrets; ['credential-access']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+217;Cached Domain Credentials; ['credential-access']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+218;Disk Structure Wipe; ['impact']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+219;Disk Content Wipe; ['impact']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+220;Disk Wipe; ['impact']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+221;Archive via Custom Method; ['collection']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+222;Archive via Library; ['collection']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+223;Archive via Utility; ['collection']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+224;Archive Collected Data; ['collection']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+225;Application or System Exploitation; ['impact']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;2,515145325;0,85;0,77;0,85;0,55
+226;Application Exhaustion Flood; ['impact']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;2,515145325;0,85;0,77;0,85;0,55
+227;Service Exhaustion Flood; ['impact']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;3,887042775;0,85;0,77;0,85;0,85
+228;OS Exhaustion Flood; ['impact']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+229;External Defacement; ['impact']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure'];;;3,887042775;0,85;0,77;0,85;0,85
+230;Internal Defacement; ['impact']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+231;Email Forwarding Rule; ['collection']; ['Office 365', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+232;Remote Email Collection; ['collection']; ['Office 365', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+233;Local Email Collection; ['collection']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+234;SID-History Injection; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+235;Parent PID Spoofing; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+236;Make and Impersonate Token; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+237;Create Process with Token; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+238;Token Impersonation/Theft; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+239;Sharepoint; ['collection']; ['Windows', 'Office 365'];;;1,83457659;0,62;0,77;0,85;0,55
+240;Confluence; ['collection']; ['SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+241;Credentials from Web Browsers; ['credential-access']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+242;Securityd Memory; ['credential-access']; ['Linux', 'macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+243;Keychain; ['credential-access']; ['macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+244;Dynamic Data Exchange; ['execution']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+245;Component Object Model; ['execution']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+246;Inter-Process Communication; ['execution']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+247;Silver Ticket; ['credential-access']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+248;Golden Ticket; ['credential-access']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+249;Steal or Forge Kerberos Tickets; ['credential-access']; ['Windows'];;;2,83525473;0,85;0,77;0,85;0,62
+250;LLMNR/NBT-NS Poisoning and SMB Relay; ['credential-access', 'collection']; ['Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+251;Man-in-the-Middle; ['credential-access', 'collection']; ['Windows', 'macOS', 'Linux'];;;2,83525473;0,62;0,77;0,85;0,85
+252;Password Filter DLL; ['credential-access', 'defense-evasion']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+253;Domain Controller Authentication; ['credential-access', 'defense-evasion']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+254;Modify Authentication Process; ['credential-access', 'defense-evasion']; ['Windows', 'Linux', 'macOS', 'Network'];;;2,515145325;0,85;0,77;0,85;0,55
+255;Credential API Hooking; ['collection', 'credential-access']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+256;Web Portal Capture; ['collection', 'credential-access']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+257;GUI Input Capture; ['collection', 'credential-access']; ['macOS', 'Windows'];;;1,338161748;0,62;0,77;0,62;0,55
+258;Keylogging; ['collection', 'credential-access']; ['Windows', 'macOS', 'Linux', 'Network'];;;2,83525473;0,62;0,77;0,85;0,85
+259;Credentials from Password Stores; ['credential-access']; ['Linux', 'macOS', 'Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+260;Cloud Instance Metadata API; ['credential-access']; ['AWS', 'GCP', 'Azure'];;;2,515145325;0,85;0,77;0,85;0,55
+261;/etc/passwd and /etc/shadow; ['credential-access']; ['Linux'];;;0,798928515;0,27;0,77;0,85;0,55
+262;Proc Filesystem; ['credential-access']; ['Linux'];;;0,798928515;0,27;0,77;0,85;0,55
+263;DCSync; ['credential-access']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+264;Kerberoasting; ['credential-access']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+265;Group Policy Preferences; ['credential-access']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+266;NTDS; ['credential-access']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+267;Security Account Manager; ['credential-access']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+268;LSASS Memory; ['credential-access']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+269;Credential Stuffing; ['credential-access']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+270;Password Spraying; ['credential-access']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+271;Password Cracking; ['credential-access']; ['Linux', 'macOS', 'Windows', 'Office 365', 'Azure AD'];;;1,83457659;0,62;0,77;0,85;0,55
+272;Password Guessing; ['credential-access']; ['Linux', 'macOS', 'Windows', 'Office 365', 'GCP', 'Azure AD', 'AWS', 'Azure', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+273;Windows Remote Management; ['lateral-movement']; ['Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+274;VNC; ['lateral-movement']; ['Linux', 'macOS', 'Windows'];;;2,2211673;0,85;0,44;0,85;0,85
+275;SSH; ['lateral-movement']; ['Linux', 'macOS'];;;2,2211673;0,85;0,44;0,85;0,85
+276;Distributed Component Object Model; ['lateral-movement']; ['Windows'];;;1,234707705;0,27;0,77;0,85;0,85
+277;SMB/Windows Admin Shares; ['lateral-movement']; ['Windows'];;;1,04832948;0,62;0,44;0,85;0,55
+278;Remote Desktop Protocol; ['lateral-movement']; ['Windows'];;;1,62014556;0,62;0,44;0,85;0,85
+279;Compromise Client Software Binary; ['persistence']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+280;Space after Filename; ['defense-evasion']; ['Linux', 'macOS'];;;1,338161748;0,62;0,77;0,62;0,55
+281;Match Legitimate Name or Location; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,4372259;0,85;0,44;0,85;0,55
+282;Masquerade Task or Service; ['defense-evasion']; ['Windows', 'Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+283;Rename System Utilities; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+284;Right-to-Left Override; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+285;Invalid Code Signature; ['defense-evasion']; ['macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+286;SIP and Trust Provider Hijacking; ['defense-evasion']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+287;Code Signing; ['defense-evasion']; ['macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+288;Gatekeeper Bypass; ['defense-evasion']; ['macOS'];;;1,338161748;0,62;0,77;0,62;0,55
+289;Subvert Trust Controls; ['defense-evasion']; ['Windows', 'macOS', 'Linux'];;;2,515145325;0,85;0,77;0,85;0,55
+290;Steganography; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,4372259;0,85;0,44;0,85;0,55
+291;Software Packing; ['defense-evasion']; ['macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+292;Binary Padding; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+293;Linux and Mac File and Directory Permissions Modification; ['defense-evasion']; ['macOS', 'Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+294;Windows File and Directory Permissions Modification; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+295;Private Keys; ['credential-access']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+296;Bash History; ['credential-access']; ['Linux', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+297;Credentials in Registry; ['credential-access']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+298;Credentials In Files; ['credential-access']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+299;Unsecured Credentials; ['credential-access']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+300;PubPrn; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+301;Timestomp; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+302;Network Share Connection Removal; ['defense-evasion']; ['Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+303;File Deletion; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+304;Clear Command History; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+305;Web Session Cookie; ['defense-evasion', 'lateral-movement']; ['Office 365', 'SaaS'];;;2,515145325;0,85;0,77;0,85;0,55
+306;Application Access Token; ['defense-evasion', 'lateral-movement']; ['Office 365', 'SaaS'];;;3,887042775;0,85;0,77;0,85;0,85
+307;Pass the Ticket; ['defense-evasion', 'lateral-movement']; ['Windows'];;;0,9145983;0,85;0,77;0,85;0,2
+308;Pass the Hash; ['defense-evasion', 'lateral-movement']; ['Windows'];;;1,4372259;0,85;0,44;0,85;0,55
+309;Use Alternate Authentication Material; ['defense-evasion', 'lateral-movement']; ['Windows', 'Office 365', 'SaaS'];;;1,83457659;0,85;0,77;0,62;0,55
+310;Elevated Execution with Prompt; ['privilege-escalation', 'defense-evasion']; ['macOS'];;;1,338161748;0,62;0,77;0,62;0,55
+311;Sudo and Sudo Caching; ['privilege-escalation', 'defense-evasion']; ['Linux', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+312;Bypass User Account Control; ['privilege-escalation', 'defense-evasion']; ['Windows'];;;1,338161748;0,62;0,77;0,62;0,55
+313;Setuid and Setgid; ['privilege-escalation', 'defense-evasion']; ['Linux', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+314;Abuse Elevation Control Mechanism; ['privilege-escalation', 'defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+315;Cloud Account; ['persistence']; ['AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD'];;;0,798928515;0,27;0,77;0,85;0,55
+316;Clear Linux or Mac System Logs; ['defense-evasion']; ['Linux', 'macOS'];;;2,515145325;0,85;0,77;0,85;0,55
+317;Clear Windows Event Logs; ['defense-evasion']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+318;Domain Account; ['persistence']; ['Windows', 'macOS', 'Linux'];;;0,798928515;0,27;0,77;0,85;0,55
+319;Local Account; ['persistence']; ['Linux', 'macOS', 'Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+320;Plist Modification; ['persistence', 'privilege-escalation']; ['macOS'];;;1,338161748;0,62;0,77;0,62;0,55
+321;Port Monitors; ['persistence', 'privilege-escalation']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+322;Shortcut Modification; ['persistence', 'privilege-escalation']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+323;LSASS Driver; ['persistence', 'privilege-escalation']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+324;Re-opened Applications; ['persistence', 'privilege-escalation']; ['macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+325;Kernel Modules and Extensions; ['persistence', 'privilege-escalation']; ['macOS', 'Linux'];;;0,798928515;0,27;0,77;0,85;0,55
+326;Security Support Provider; ['persistence', 'privilege-escalation']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+327;Winlogon Helper DLL; ['persistence', 'privilege-escalation']; ['Windows'];;;0,332998776;0,27;0,44;0,62;0,55
+328;Time Providers; ['persistence', 'privilege-escalation']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+329;Emond; ['privilege-escalation', 'persistence']; ['macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+330;PowerShell Profile; ['privilege-escalation', 'persistence']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+331;Image File Execution Options Injection; ['privilege-escalation', 'persistence']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+332;Odbcconf; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+333;Application Shimming; ['privilege-escalation', 'persistence']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+334;Authentication Package; ['persistence', 'privilege-escalation']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+335;AppInit DLLs; ['privilege-escalation', 'persistence']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+336;AppCert DLLs; ['privilege-escalation', 'persistence']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+337;Msiexec; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+338;Accessibility Features; ['privilege-escalation', 'persistence']; ['Windows'];;;0,582747858;0,27;0,77;0,62;0,55
+339;Netsh Helper DLL; ['privilege-escalation', 'persistence']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+340;LC_LOAD_DYLIB Addition; ['privilege-escalation', 'persistence']; ['macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+341;Trap; ['privilege-escalation', 'persistence']; ['macOS', 'Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+342;.bash_profile and .bashrc; ['privilege-escalation', 'persistence']; ['Linux', 'macOS'];;;1,338161748;0,62;0,77;0,62;0,55
+343;Windows Management Instrumentation Event Subscription; ['privilege-escalation', 'persistence']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+344;Screensaver; ['privilege-escalation', 'persistence']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+345;Change Default File Association; ['privilege-escalation', 'persistence']; ['Windows'];;;1,04832948;0,62;0,44;0,85;0,55
+346;Registry Run Keys / Startup Folder; ['persistence', 'privilege-escalation']; ['Windows'];;;1,338161748;0,62;0,77;0,62;0,55
+347;Control Panel; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+348;Regsvr32; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+349;Regsvcs/Regasm; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+350;Mshta; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+351;InstallUtil; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+352;Compiled HTML File; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+353;CMSTP; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+354;Rundll32; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+355;Boot or Logon Autostart Execution; ['persistence', 'privilege-escalation']; ['Linux', 'macOS', 'Windows'];;;1,04832948;0,62;0,44;0,85;0,55
+356;Event Triggered Execution; ['privilege-escalation', 'persistence']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+357;Add Office 365 Global Administrator Role; ['persistence']; ['Office 365'];;;0,798928515;0,27;0,77;0,85;0,55
+358;Exchange Email Delegate Permissions; ['persistence']; ['Windows', 'Office 365'];;;0,798928515;0,27;0,77;0,85;0,55
+359;Additional Cloud Credentials; ['persistence']; ['Azure AD', 'Azure', 'AWS', 'GCP'];;;1,83457659;0,62;0,77;0,85;0,55
+360;Launch Daemon; ['persistence', 'privilege-escalation']; ['macOS'];;;0,45653058;0,27;0,44;0,85;0,55
+361;Windows Service; ['persistence', 'privilege-escalation']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+362;Systemd Service; ['persistence', 'privilege-escalation']; ['Linux'];;;1,04832948;0,62;0,44;0,85;0,55
+363;Launch Agent; ['persistence', 'privilege-escalation']; ['macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+364;Startup Items; ['persistence', 'privilege-escalation']; ['macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+365;Rc.common; ['persistence', 'privilege-escalation']; ['macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+366;Process Hollowing; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+367;Process Doppelgänging; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+368;Extra Window Memory Injection; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+369;VDSO Hijacking; ['defense-evasion', 'privilege-escalation']; ['Linux'];;;2,515145325;0,85;0,77;0,85;0,55
+370;Proc Memory; ['defense-evasion', 'privilege-escalation']; ['Linux'];;;2,515145325;0,85;0,77;0,85;0,55
+371;Ptrace System Calls; ['defense-evasion', 'privilege-escalation']; ['Linux'];;;2,515145325;0,85;0,77;0,85;0,55
+372;Thread Local Storage; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+373;Asynchronous Procedure Call; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+374;Thread Execution Hijacking; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+375;Portable Executable Injection; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+376;Dynamic-link Library Injection; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+377;Network Logon Script; ['persistence', 'privilege-escalation']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+378;Create or Modify System Process; ['persistence', 'privilege-escalation']; ['Windows', 'macOS', 'Linux'];;;2,515145325;0,85;0,77;0,85;0,55
+379;Logon Script (Mac); ['persistence', 'privilege-escalation']; ['macOS'];;;2,515145325;0,85;0,77;0,85;0,55
+380;Logon Script (Windows); ['persistence', 'privilege-escalation']; ['Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+381;Bootkit; ['persistence', 'defense-evasion']; ['Linux', 'Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+382;Component Firmware; ['persistence', 'defense-evasion']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+383;System Firmware; ['persistence', 'defense-evasion']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+384;Web Shell; ['persistence']; ['Linux', 'Windows', 'macOS'];;;1,62014556;0,62;0,44;0,85;0,85
+385;Transport Agent; ['persistence']; ['Linux', 'Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+386;SQL Stored Procedures; ['persistence']; ['Windows', 'Linux'];;;0,798928515;0,27;0,77;0,85;0,55
+387;Cron; ['execution', 'persistence', 'privilege-escalation']; ['Linux', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+388;Launchd; ['execution', 'persistence', 'privilege-escalation']; ['macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+389;At (Linux); ['execution', 'persistence', 'privilege-escalation']; ['Linux'];;;3,887042775;0,85;0,77;0,85;0,85
+390;Scheduled Task; ['execution', 'persistence', 'privilege-escalation']; ['Windows'];;;1,234707705;0,27;0,77;0,85;0,85
+391;At (Windows); ['execution', 'persistence', 'privilege-escalation']; ['Windows'];;;1,234707705;0,27;0,77;0,85;0,85
+392;Pre-OS Boot; ['defense-evasion', 'persistence']; ['Linux', 'Windows', 'Network'];;;0,798928515;0,27;0,77;0,85;0,55
+393;Office Template Macros; ['persistence']; ['Windows', 'Office 365'];;;1,83457659;0,62;0,77;0,85;0,55
+394;Outlook Home Page; ['persistence']; ['Windows', 'Office 365'];;;1,338161748;0,62;0,77;0,62;0,55
+395;Outlook Forms; ['persistence']; ['Windows', 'Office 365'];;;1,338161748;0,62;0,77;0,62;0,55
+396;Outlook Rules; ['persistence']; ['Windows', 'Office 365'];;;1,338161748;0,62;0,77;0,62;0,55
+397;Add-ins; ['persistence']; ['Windows', 'Office 365'];;;1,83457659;0,62;0,77;0,85;0,55
+398;Office Test; ['persistence']; ['Windows', 'Office 365'];;;1,83457659;0,62;0,77;0,85;0,55
+399;Account Access Removal; ['impact']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+400;Steal Web Session Cookie; ['credential-access']; ['Linux', 'macOS', 'Windows', 'Office 365', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+401;System Shutdown/Reboot; ['impact']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+402;Software Discovery; ['discovery']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;2,068068156;0,62;0,77;0,85;0,62
+403;Internal Spearphishing; ['lateral-movement']; ['Windows', 'macOS', 'Linux', 'Office 365', 'SaaS'];;;1,338161748;0,62;0,77;0,62;0,55
+404;Steal Application Access Token; ['credential-access']; ['SaaS', 'Office 365', 'Azure AD'];;;1,338161748;0,62;0,77;0,62;0,55
+405;Unused/Unsupported Cloud Regions; ['defense-evasion']; ['AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+406;Implant Container Image; ['persistence']; ['GCP', 'Azure', 'AWS'];;;1,83457659;0,62;0,77;0,85;0,55
+407;Cloud Service Dashboard; ['discovery']; ['AWS', 'GCP', 'Azure', 'Azure AD', 'Office 365'];;;1,83457659;0,62;0,77;0,85;0,55
+408;Data from Cloud Storage Object; ['collection']; ['AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+409;Modify Cloud Compute Infrastructure; ['defense-evasion']; ['AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+410;Transfer Data to Cloud Account; ['exfiltration']; ['Azure', 'AWS', 'GCP'];;;2,83525473;0,62;0,77;0,85;0,85
+411;Cloud Service Discovery; ['discovery']; ['AWS', 'GCP', 'Azure', 'Azure AD', 'Office 365', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+412;Server Software Component; ['persistence']; ['Windows', 'Linux', 'macOS'];;;1,234707705;0,27;0,77;0,85;0,85
+413;Endpoint Denial of Service; ['impact']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'Office 365', 'Azure AD', 'SaaS'];;;3,887042775;0,85;0,77;0,85;0,85
+414;Virtualization/Sandbox Evasion; ['defense-evasion', 'discovery']; ['Windows', 'macOS', 'Linux'];;;2,515145325;0,85;0,77;0,85;0,55
+415;Network Denial of Service; ['impact']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure AD', 'SaaS', 'Azure', 'Office 365'];;;3,887042775;0,85;0,77;0,85;0,85
+416;Resource Hijacking; ['impact']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure'];;;2,83525473;0,62;0,77;0,85;0,85
+417;Firmware Corruption; ['impact']; ['Linux', 'macOS', 'Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+418;Defacement; ['impact']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure'];;;3,887042775;0,85;0,77;0,85;0,85
+419;Inhibit System Recovery; ['impact']; ['Windows', 'macOS', 'Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+420;Service Stop; ['impact']; ['Windows', 'Linux', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+421;Data Encrypted for Impact; ['impact']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+422;Data Destruction; ['impact']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+423;Group Policy Modification; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+424;Domain Trust Discovery; ['discovery']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+425;Execution Guardrails; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+426;File and Directory Permissions Modification; ['defense-evasion']; ['Linux', 'Windows', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+427;Template Injection; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+428;XSL Script Processing; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+429;Browser Bookmark Discovery; ['discovery']; ['Linux', 'Windows', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+430;Exploit Public-Facing Application; ['initial-access']; ['Linux', 'Windows', 'macOS', 'AWS', 'GCP', 'Azure', 'Network'];;;3,887042775;0,85;0,77;0,85;0,85
+431;Exploitation of Remote Services; ['lateral-movement']; ['Linux', 'Windows', 'macOS'];;;3,887042775;0,85;0,77;0,85;0,85
+432;Exploitation for Client Execution; ['execution']; ['Linux', 'Windows', 'macOS'];;;2,068068156;0,62;0,77;0,62;0,85
+433;Password Policy Discovery; ['discovery']; ['Windows', 'Linux', 'macOS'];;;2,83525473;0,62;0,77;0,85;0,85
+434;Data from Information Repositories; ['collection']; ['Linux', 'Windows', 'macOS', 'SaaS', 'Office 365'];;;2,83525473;0,62;0,77;0,85;0,85
+435;Supply Chain Compromise; ['initial-access']; ['Linux', 'Windows', 'macOS'];;;1,4372259;0,85;0,44;0,85;0,55
+436;Traffic Signaling; ['defense-evasion', 'persistence', 'command-and-control']; ['Linux', 'macOS', 'Windows', 'Network'];;;2,83525473;0,62;0,77;0,85;0,85
+437;BITS Jobs; ['defense-evasion', 'persistence']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+438;Exploitation for Defense Evasion; ['defense-evasion']; ['Linux', 'Windows', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+439;Remote Access Software; ['command-and-control']; ['Linux', 'Windows', 'macOS'];;;2,83525473;0,62;0,77;0,85;0,85
+440;Signed Script Proxy Execution; ['defense-evasion']; ['Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+441;Trusted Relationship; ['initial-access']; ['Linux', 'Windows', 'macOS', 'AWS', 'GCP', 'Azure', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+442;Drive-by Compromise; ['initial-access']; ['Windows', 'Linux', 'macOS', 'SaaS'];;;2,068068156;0,62;0,77;0,62;0,85
+443;Exploitation for Credential Access; ['credential-access']; ['Linux', 'Windows', 'macOS'];;;3,887042775;0,85;0,77;0,85;0,85
+444;Signed Binary Proxy Execution; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+445;Hardware Additions; ['initial-access']; ['Windows', 'Linux', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+446;Indirect Command Execution; ['defense-evasion']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+447;Rogue Domain Controller; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+448;User Execution; ['execution']; ['Linux', 'Windows', 'macOS'];;;2,068068156;0,62;0,77;0,62;0,85
+449;Browser Extensions; ['persistence']; ['Linux', 'macOS', 'Windows'];;;1,338161748;0,62;0,77;0,62;0,55
+450;Man in the Browser; ['collection']; ['Windows'];;;0,900610326;0,27;0,77;0,62;0,85
+451;Forced Authentication; ['credential-access']; ['Windows'];;;2,068068156;0,62;0,77;0,62;0,85
+452;Network Share Discovery; ['discovery']; ['macOS', 'Windows', 'Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+453;Access Token Manipulation; ['defense-evasion', 'privilege-escalation']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+454;Create Account; ['persistence']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure AD', 'Azure', 'Office 365'];;;1,83457659;0,62;0,77;0,85;0,55
+455;Office Application Startup; ['persistence']; ['Windows', 'Office 365'];;;2,83525473;0,62;0,77;0,85;0,85
+456;Deobfuscate/Decode Files or Information; ['defense-evasion']; ['Windows', 'Linux', 'macOS'];;;1,338161748;0,62;0,77;0,62;0,55
+457;External Remote Services; ['persistence', 'initial-access']; ['Windows', 'Linux'];;;1,62014556;0,62;0,44;0,85;0,85
+458;Data Encoding; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+459;Shared Modules; ['execution']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+460;Trusted Developer Utilities Proxy Execution; ['defense-evasion']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+461;Video Capture; ['collection']; ['Windows', 'macOS'];;;1,83457659;0,62;0,77;0,85;0,55
+462;System Time Discovery; ['discovery']; ['Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+463;Audio Capture; ['collection']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+464;Peripheral Device Discovery; ['discovery']; ['Windows', 'macOS'];;;2,83525473;0,62;0,77;0,85;0,85
+465;Automated Collection; ['collection']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+466;Clipboard Data; ['collection']; ['Linux', 'Windows', 'macOS'];;;2,515145325;0,85;0,77;0,85;0,55
+467;Email Collection; ['collection']; ['Windows', 'Office 365'];;;1,83457659;0,62;0,77;0,85;0,55
+468;Screen Capture; ['collection']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+469;Modify Registry; ['defense-evasion']; ['Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+470;Two-Factor Authentication Interception; ['credential-access']; ['Linux', 'Windows', 'macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+471;Brute Force; ['credential-access']; ['Linux', 'macOS', 'Windows', 'Office 365', 'Azure AD', 'SaaS', 'GCP', 'AWS', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+472;Native API; ['execution']; ['Windows', 'macOS', 'Linux'];;;1,83457659;0,62;0,77;0,85;0,55
+473;Ingress Tool Transfer; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+474;Multi-Stage Channels; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+475;Web Service; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+476;Account Manipulation; ['persistence']; ['Windows', 'Office 365', 'Azure', 'GCP', 'Azure AD', 'AWS', 'Linux', 'macOS'];;;2,515145325;0,85;0,77;0,85;0,55
+477;Non-Application Layer Protocol; ['command-and-control']; ['Windows', 'Linux', 'macOS', 'Network'];;;3,887042775;0,85;0,77;0,85;0,85
+478;Communication Through Removable Media; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+479;Replication Through Removable Media; ['lateral-movement', 'initial-access']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+480;Proxy; ['command-and-control']; ['Linux', 'macOS', 'Windows', 'Network'];;;3,887042775;0,85;0,77;0,85;0,85
+481;Account Discovery; ['discovery']; ['Linux', 'macOS', 'Windows', 'Office 365', 'Azure AD', 'AWS', 'GCP', 'Azure', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+482;File and Directory Discovery; ['discovery']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+483;System Information Discovery; ['discovery']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure'];;;2,068068156;0,62;0,77;0,85;0,62
+484;Taint Shared Content; ['lateral-movement']; ['Windows'];;;0,764663856;0,62;0,44;0,62;0,55
+485;Valid Accounts; ['defense-evasion', 'persistence', 'privilege-escalation', 'initial-access']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure', 'SaaS', 'Office 365', 'Azure AD'];;;1,04832948;0,62;0,44;0,85;0,55
+486;Data Staged; ['collection']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure'];;;2,515145325;0,85;0,77;0,85;0,55
+487;Software Deployment Tools; ['execution', 'lateral-movement']; ['Linux', 'macOS', 'Windows'];;;1,62014556;0,62;0,44;0,85;0,85
+488;Application Layer Protocol; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+489;Indicator Removal on Host; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+490;Permission Groups Discovery; ['discovery']; ['Linux', 'macOS', 'Windows', 'Office 365', 'Azure AD', 'AWS', 'GCP', 'Azure', 'SaaS'];;;1,83457659;0,62;0,77;0,85;0,55
+491;Exploitation for Privilege Escalation; ['privilege-escalation']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+492;Command and Scripting Interpreter; ['execution']; ['Linux', 'macOS', 'Windows', 'Network'];;;1,83457659;0,62;0,77;0,85;0,55
+493;Process Discovery; ['discovery']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+494;Input Capture; ['collection', 'credential-access']; ['Linux', 'macOS', 'Windows', 'Network'];;;1,338161748;0,62;0,77;0,62;0,55
+495;Process Injection; ['defense-evasion', 'privilege-escalation']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+496;Scheduled Task/Job; ['execution', 'persistence', 'privilege-escalation']; ['Windows', 'Linux', 'macOS'];;;2,83525473;0,62;0,77;0,85;0,85
+497;Exfiltration Over Physical Medium; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,85;0,77;0,62;0,55
+498;System Network Connections Discovery; ['discovery']; ['Linux', 'macOS', 'Windows', 'AWS', 'GCP', 'Azure'];;;1,83457659;0,62;0,77;0,85;0,55
+499;Exfiltration Over Alternative Protocol; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+500;Windows Management Instrumentation; ['execution']; ['Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+501;Network Service Scanning; ['discovery']; ['Linux', 'Windows', 'macOS', 'AWS', 'GCP', 'Azure'];;;2,83525473;0,62;0,77;0,85;0,85
+502;Exfiltration Over C2 Channel; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+503;Network Sniffing; ['credential-access', 'discovery']; ['Linux', 'macOS', 'Windows'];;;1,234707705;0,27;0,77;0,85;0,85
+504;Data from Network Shared Drive; ['collection']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+505;Boot or Logon Initialization Scripts; ['persistence', 'privilege-escalation']; ['macOS', 'Windows', 'Linux'];;;2,515145325;0,85;0,77;0,85;0,55
+506;Masquerading; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+507;System Owner/User Discovery; ['discovery']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+508;Data Transfer Size Limits; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+509;Scheduled Transfer; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+510;Obfuscated Files or Information; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,85;0,77;0,62;0,85
+511;Data from Removable Media; ['collection']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+512;Remote Services; ['lateral-movement']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+513;Automated Exfiltration; ['exfiltration']; ['Linux', 'macOS', 'Windows', 'Network'];;;3,887042775;0,85;0,77;0,85;0,85
+514;Remote System Discovery; ['discovery']; ['Linux', 'macOS', 'Windows'];;;2,83525473;0,62;0,77;0,85;0,85
+515;System Network Configuration Discovery; ['discovery']; ['Linux', 'macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+516;Rootkit; ['defense-evasion']; ['Linux', 'macOS', 'Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+517;Query Registry; ['discovery']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+518;Exfiltration Over Other Network Medium; ['exfiltration']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85
+519;Application Window Discovery; ['discovery']; ['macOS', 'Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+520;Fallback Channels; ['command-and-control']; ['Linux', 'Windows', 'macOS'];;;3,887042775;0,85;0,77;0,85;0,85
+521;System Service Discovery; ['discovery']; ['Windows'];;;1,83457659;0,62;0,77;0,85;0,55
+522;Direct Volume Access; ['defense-evasion']; ['Windows'];;;0,798928515;0,27;0,77;0,85;0,55
+523;Data from Local System; ['collection']; ['Linux', 'macOS', 'Windows'];;;2,515145325;0,85;0,77;0,85;0,55
+524;OS Credential Dumping; ['credential-access']; ['Windows', 'Linux', 'macOS'];;;0,798928515;0,27;0,77;0,85;0,55
+525;Data Obfuscation; ['command-and-control']; ['Linux', 'macOS', 'Windows'];;;3,887042775;0,85;0,77;0,85;0,85

@@ -1,0 +1,79 @@
+Matrix;Failure Mode;O;S;I;F;SE
+Mobile;Collection;;;1;;
+Mobile;Command and Control;;;;;1
+Mobile;Defense Evasion;;;;;1
+Mobile;Discovery;;;;;1
+Mobile;Execution;1;;;1;1
+Mobile;Exfiltration;;;1;;1
+Mobile;Initial Access;;;;;1
+Mobile;Lateral Movement;;;;;1
+Mobile;Persistence;;;;;1
+Mobile;Credential Access;;;;;1
+Mobile;Data Encrypted  for Impact;1;1;1;1;1
+Mobile;Privilege Escalation;;;;;1
+Mobile;Carrier Billing Fraud;;;;1;
+Mobile;Clipboard Modification;1;;;;
+Mobile;Delete Device Data;1;;1;1;
+Mobile;Device Lockout;1;;;;
+Mobile;Downgrade to Insecure Protocols;1;;1;;1
+Mobile;Eavesdrop on Insecure Network Communication;;;1;;1
+Mobile;Exploit SS7 to Redirect Phone Calls/SMS;1;;;;
+Mobile;Exploit SS7 to Track Device Location;;;1;;
+Mobile;Generate Fraudulent Advertising Revenue;;;;;
+Mobile;Input Injection;1;;;;
+Mobile;Jamming or Denial of Service;1;1;;1;
+Mobile;Manipulate App Store Rankings or Ratings;;;;;
+Mobile;Manipulate Device Communication;1;1;1;1;
+Mobile;Modify System Partition;1;;;;
+Mobile;Obtain Device Cloud Backups;;;1;;1
+Mobile;Remotely Track Device Without Authorization;;;1;;
+Mobile;Remotely Wipe Data Without Authorization;1;1;1;1;
+Mobile;Rogue Cellular Base Station;1;;;;1
+Mobile;Rogue Wi-Fi Access Points;1;;;;1
+Mobile;SIM Card Swap;1;;;;1
+Mobile;SMS Control;1;;;;1
+Enterprise;Collection;;;1;;
+Enterprise;Command and Control;;;;;1
+Enterprise;Defense Evasion;;;;;1
+Enterprise;Discovery;;;;;1
+Enterprise;Execution;1;;;1;1
+Enterprise;Exfiltration;;;1;;1
+Enterprise;Initial Access;;;;;1
+Enterprise;Lateral Movement;;;;;1
+Enterprise;Persistence;;;;;1
+Enterprise;Credential Access;;;;;1
+Enterprise;Data Encrypted for    Impact;1;1;1;1;1
+Enterprise;Privilege Escalation;;;;;1
+Enterprise;Account Access    Removal;1;1;;1;1
+Enterprise;Data Destruction;1;1;1;1;
+Enterprise;Data Manipulation;1;1;1;1;
+Enterprise;Defacement;1;1;1;1;1
+Enterprise;Disk Wipe;1;1;1;1;
+Enterprise;Endpoint Denial of    Service;1;1;;1;
+Enterprise;Firmware Corruption;1;1;;1;
+Enterprise;Inhibit System    Recovery;1;1;;1;
+Enterprise;Network Denial of    Service;1;1;;1;
+Enterprise;Resource Hijacking;1;1;;1;1
+Enterprise;Service Stop;1;1;;1;
+Enterprise;System Shutdown/Reboot;1;1;;1;
+ICS;Collection;;;1;;
+ICS; Command and Control;;;;;1
+ICS;Defense Evasion;;;;;1
+ICS;Discovery;;;;;1
+ICS;Execution;1;1;;1;1
+ICS; Theft of Operational    Information ;;;1;;1
+ICS;Initial Access;;;;;1
+ICS;Lateral Movement;;;;;1
+ICS;Persistence;;;;;1
+ICS;Damage to Property;1;1;1;1;
+ICS;Denial of Control;1;1;;;
+ICS;Denial of View;1;1;;1;1
+ICS; Impair Process    Control ;1;1;;1;
+ICS; Inhibit Response     Function ;1;1;;1;
+ICS;Loss of Availability;1;1;1;1;1
+ICS;Loss of Control;1;1;;1;
+ICS; Loss of Productivity    and Revenue ;1;1;;1;
+ICS;Loss of Safety;1;1;;1;
+ICS;Loss of View;1;1;;1;1
+ICS; Manipulation of    Control ;1;1;;1;
+ICS; Manipulation of View ;1;1;;1;1

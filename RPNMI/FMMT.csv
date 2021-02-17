@@ -1,0 +1,79 @@
+Matrix;Failure Mode;O;S;I;F;SE
+Mobile;Collection;;;IC;;
+Mobile;Command and Control;;;;;ODC
+Mobile;Defense Evasion;;;;;OCC
+Mobile;Discovery;;;;;ODC
+Mobile;Execution;OOI;;;FC;ODC
+Mobile;Exfiltration;;;IC;;ODC
+Mobile;Initial Access;;;;;ODC
+Mobile;Lateral Movement;;;;;ODC
+Mobile;Persistence;;;;;OCC
+Mobile;Credential Access;;;;;ODC
+Mobile;Data Encrypted  for Impact;OOI;SC;IC;FC;ODC
+Mobile;Privilege Escalation;;;;;OCC
+Mobile;Carrier Billing Fraud;;;;FC;
+Mobile;Clipboard Modification;OOI;;;;
+Mobile;Delete Device Data;OOI;;IC;FC;
+Mobile;Device Lockout;OOI;;;;
+Mobile;Downgrade to Insecure Protocols;OOI;;IC;;ODC
+Mobile;Eavesdrop on Insecure Network Communication;;;IC;;ODC
+Mobile;Exploit SS7 to Redirect Phone Calls/SMS;OOI;;;;
+Mobile;Exploit SS7 to Track Device Location;;;LIC;;
+Mobile;Generate Fraudulent Advertising Revenue;;;;;
+Mobile;Input Injection;OOI;;;;
+Mobile;Jamming or Denial of Service;OOI;SC;;FC;
+Mobile;Manipulate App Store Rankings or Ratings;;;;;
+Mobile;Manipulate Device Communication;OOI;SC;IC;FC;
+Mobile;Modify System Partition;OOI;;;;
+Mobile;Obtain Device Cloud Backups;;;IC;;ODC
+Mobile;Remotely Track Device Without Authorization;;;LIC;;
+Mobile;Remotely Wipe Data Without Authorization;OOI;SC;IC;FC;
+Mobile;Rogue Cellular Base Station;OOI;;;;ODC
+Mobile;Rogue Wi-Fi Access Points;OOI;;;;ODC
+Mobile;SIM Card Swap;OOI;;;;ODC
+Mobile;SMS Control;OOI;;;;ODC
+Enterprise;Collection;;;IC;;
+Enterprise;Command and Control;;;;;ODC
+Enterprise;Defense Evasion;;;;;OCC
+Enterprise;Discovery;;;;;ODC
+Enterprise;Execution;OOI;;;FC;ODC
+Enterprise;Exfiltration;;;IC;;ODC
+Enterprise;Initial Access;;;;;ODC
+Enterprise;Lateral Movement;;;;;ODC
+Enterprise;Persistence;;;;;OCC
+Enterprise;Credential Access;;;;;ODC
+Enterprise;Data Encrypted for    Impact;OOI;SC;IC;FC;ODC
+Enterprise;Privilege Escalation;;;;;OCC
+Enterprise;Account Access    Removal;OOI;SC;;FC;ODC
+Enterprise;Data Destruction;OOI;SC;IC;FC;
+Enterprise;Data Manipulation;OOI;SC;IC;FC;
+Enterprise;Defacement;OOI;SC;IC;FC;ODC
+Enterprise;Disk Wipe;OOI;SC;IC;FC;
+Enterprise;Endpoint Denial of    Service;OOI;SC;;FC;
+Enterprise;Firmware Corruption;OOI;SC;;FC;
+Enterprise;Inhibit System    Recovery;OOI;SC;;FC;
+Enterprise;Network Denial of    Service;OOI;SC;;FC;
+Enterprise;Resource Hijacking;OOI;SC;;FC;ODC
+Enterprise;Service Stop;OOI;SC;;FC;
+Enterprise;System Shutdown/Reboot;OOI;SC;;FC;
+ICS;Collection;;;IC;;
+ICS; Command and Control;;;;;ODC
+ICS;Defense Evasion;;;;;OCC
+ICS;Discovery;;;;;ODC
+ICS;Execution;OOI;SC;;FC;ODC
+ICS; Theft of Operational    Information ;;;IC;;ODC
+ICS;Initial Access;;;;;ODC
+ICS;Lateral Movement;;;;;ODC
+ICS;Persistence;;;;;OCC
+ICS;Damage to Property;OOI;SC;IC;FC;
+ICS;Denial of Control;I2CF;SC;;;
+ICS;Denial of View;I2MF;SC;;FC;ODC
+ICS; Impair Process    Control ;I2CF;SC;;FC;
+ICS; Inhibit Response     Function ;OOI;SC;;FC;
+ICS;Loss of Availability;OOI;SC;IC;FC;ODC
+ICS;Loss of Control;I2CF;SC;;FC;
+ICS; Loss of Productivity    and Revenue ;OOI;SC;;FC;
+ICS;Loss of Safety;OOI;SC;;FC;
+ICS;Loss of View;I2MF;SC;;FC;ODC
+ICS; Manipulation of    Control ;I2CF;SC;;FC;
+ICS; Manipulation of View ;I2MF;SC;;FC;ODC
