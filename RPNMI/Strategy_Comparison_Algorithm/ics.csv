@@ -1,0 +1,79 @@
+number;name;kill_chain_phases;Asset;Technologies;Additions;CVSS_Exp;PR_V;AC_V;UI_V;AV_V;id
+1;Activate Firmware Update Mode; ['inhibit-response-function']; ['Field Controller/RTU/PLC/IED', 'Safety Instrumented System/Protection Relay'];;;3,887042775;0,85;0,77;0,85;0,85;T0800
+2;Alarm Suppression; ['inhibit-response-function']; ['Field Controller/RTU/PLC/IED', 'Safety Instrumented System/Protection Relay'];;;2,2211673;0,85;0,44;0,85;0,85;T0878
+3;Automated Collection; ['collection-ics']; ['Field Controller/RTU/PLC/IED', 'Safety Instrumented System/Protection Relay', 'Control Server'];;;3,887042775;0,85;0,77;0,85;0,85;T0802
+4;Block Command Message; ['inhibit-response-function']; ['Field Controller/RTU/PLC/IED'];;;2,2211673;0,85;0,44;0,85;0,85;T0803
+5;Block Reporting Message; ['inhibit-response-function']; ['Field Controller/RTU/PLC/IED', 'Input/Output Server'];;;2,2211673;0,85;0,44;0,85;0,85;T0804
+6;Block Serial COM; ['inhibit-response-function']; ['Field Controller/RTU/PLC/IED', 'Input/Output Server'];;;2,2211673;0,85;0,44;0,85;0,85;T0805
+7;Brute Force I/O; ['impair-process-control']; ['Control Server', 'Field Controller/RTU/PLC/IED'];;;2,2211673;0,85;0,44;0,85;0,85;T0806
+8;Command-Line Interface; ['execution-ics']; ['Windows',  'Field Controller/RTU/PLC/IED', 'Input/Output Server', 'Control Server', 'Engineering Workstation'] ;;;1,7224;0,85;0,77;0,85;0,62;T0807
+9;Commonly Used Port; ['command-and-control-ics']; ['Windows', 'Safety Instrumented System/Protection Relay', 'Field Controller/RTU/PLC/IED', 'Human-Machine Interface', 'Control Server', 'Engineering Workstation'];;;3,887042775;0,85;0,77;0,85;0,85;T0885
+10;Connection Proxy; ['command-and-control-ics']; ['Windows', 'Network'];;;1,7224;0,85;0,77;0,85;0,62;T0884
+11;Damage to Property; ['impact-ics']; ['Windows', 'Control Server', 'Data Historian', 'Engineering Workstation', 'Field Controller/RTU/PLC/IED', 'Human-Machine Interface', 'Input/Output Server', 'Safety Instrumented System/Protection Relay'];;;3,887042775;0,85;0,77;0,85;0,85;T0879
+12;Data Destruction; ['inhibit-response-function']; ['Windows', 'Control Server', 'Human-Machine Interface', 'Field Controller/RTU/PLC/IED'];;;2,5715;0,85;0,77;0,85;0,55;T0809
+13;Data from Information Repositories; ['collection-ics']; ['Windows', 'Control Server', 'Data Historian', 'Engineering Workstation', 'Human-Machine Interface'];;;2,515145325;0,85;0,77;0,85;0,55;T0811
+14;Default Credentials; ['lateral-movement-ics']; ['Windows', 'Human-Machine Interface', 'Field Controller/RTU/PLC/IED', 'Safety Instrumented System/Protection Relay', 'Control Server', 'Engineering Workstation'];;;3,887042775;0,85;0,77;0,85;0,85;T0812
+15;Denial of Control; ['impact-ics']; ['Windows', 'Network',  'Human-Machine Interface', 'Field Controller/RTU/PLC/IED', 'Control Server', 'Engineering Workstation'];;;2,2211673;0,85;0,44;0,85;0,85;T0813
+16;Denial of Service; ['inhibit-response-function']; ['Windows', 'Field Controller/RTU/PLC/IED', 'Safety Instrumented System/Protection Relay'];;;3,887042775;0,85;0,77;0,85;0,85;T0814
+17;Denial of View; ['impact-ics']; ['Windows' , 'Network',  'Engineering Workstation', 'Field Controller/RTU/PLC/IED', 'Input/Output Server', 'Sensor'];;;2,83525473;0,85;0,77;0,85;0,62;T0815
+18;Detect Operating Mode; ['collection-ics']; ['Windows', 'Field Controller/RTU/PLC/IED'];;;2,2211673;0,85;0,44;0,85;0,85;T0868
+19;Device Restart/Shutdown; ['inhibit-response-function']; ['Windows', 'Field Controller/RTU/PLC/IED'];;;3,887042775;0,85;0,77;0,85;0,85;T0816
+20;Drive-by Compromise; ['initial-access-ics']; ['Windows',  'Engineering Workstation'];;;2,83525473;0,85;0,77;0,62;0,85;T0817
+21;Execution through API; ['execution-ics']; ['Windows', 'Field Controller/RTU/PLC/IED'];;;2,2211673;0,85;0,44;0,85;0,85;T0871
+22;Exploit Public-Facing Application; ['initial-access-ics']; ['Windows',   'Engineering Workstation',  'Data Historian', 'Control Server'];;;3,887042775;0,85;0,77;0,85;0,85;T0819
+23;Exploitation for Evasion; ['evasion-ics']; ['Windows', 'Safety Instrumented System/Protection Relay', 'Field Controller/RTU/PLC/IED'];;;1,4372259;0,85;0,44;0,85;0,55;T0820
+24;Exploitation for Privilege Escalation; ['privilege-escalation-ics']; ['Human-Machine Interface', 'Safety Instrumented System/Protection Relay'];;;1,4372259;0,85;0,44;0,85;0,55;T0890
+25;Exploitation of Remote Services; ['lateral-movement-ics']; ['Windows', 'Human-Machine Interface', 'Data Historian', 'Engineering Workstation'];;;3,4206;0,85;0,77;0,85;0,85;T0866
+26;External Remote Services; ['lateral-movement-ics', 'initial-access-ics']; ['Windows', 'Control Server', 'Input/Output Server'];;;2,2211673;0,85;0,44;0,85;0,85;T0822
+27;Graphical User Interface; ['execution-ics']; ['Windows', 'Human-Machine Interface'];;;3,887042775;0,85;0,77;0,85;0,85;T0823
+28;Hooking; ['persistence-ics']; ['Windows', 'Engineering Workstation'];;;0,8733;0,27;0,77;0,85;0,55;T0874
+29;I/O Image; ['collection-ics']; ['Windows', 'Field Controller/RTU/PLC/IED'];;;2,515145325;0,85;0,77;0,85;0,55;T0877
+30;Indicator Removal on Host; ['evasion-ics']; ['Windows', 'Human-Machine Interface', 'Safety Instrumented System/Protection Relay'];;;2,515145325;0,85;0,77;0,85;0,55;T0872
+31;Internet Accessible Device; ['initial-access-ics']; ['Windows',   'Engineering Workstation',  'Data Historian', 'Control Server'];;;3,887042775;0,85;0,77;0,85;0,85;T0883
+32;Loss of Availability; ['impact-ics']; ['Windows', 'Control Server', 'Data Historian', 'Engineering Workstation', 'Field Controller/RTU/PLC/IED', 'Human-Machine Interface', 'Input/Output Server', 'Safety Instrumented System/Protection Relay', 'Network'];;;3,887042775;0,85;0,77;0,85;0,85;T0826
+33;Loss of Control; ['impact-ics'];['Windows', 'Network',  'Human-Machine Interface', 'Field Controller/RTU/PLC/IED', 'Control Server', 'Engineering Workstation'];;;2,2211673;0,85;0,44;0,85;0,85;T0827
+34;Loss of Productivity and Revenue; ['impact-ics'];['Windows', 'Network',  'Human-Machine Interface', 'Field Controller/RTU/PLC/IED', 'Control Server', 'Engineering Workstation'];;;2,2211673;0,85;0,44;0,85;0,85;T0828
+35;Loss of Safety; ['impact-ics'];['Safety Instrumented System/Protection Relay'];;;3,887042775;0,85;0,77;0,85;0,85;T0880
+36;Loss of View; ['impact-ics']; ['Windows', 'Human-Machine Interface', 'Engineering Workstation', 'Sensor'];;;2,2211673;0,85;0,44;0,85;0,85;T0829
+37;Man in the Middle; ['execution-ics']; ['Windows', 'Control Server', 'Field Controller/RTU/PLC/IED', 'Human-Machine Interface'];;;2,2211673;0,85;0,44;0,85;0,85;T0830
+38;Manipulate I/O Image; ['inhibit-response-function']; ['Windows', 'Field Controller/RTU/PLC/IED'];;;1,4372259;0,85;0,44;0,85;0,55;T0835
+39;Manipulation of Control; ['impact-ics'];['Windows', 'Network',  'Human-Machine Interface', 'Field Controller/RTU/PLC/IED', 'Control Server', 'Engineering Workstation'];;;1,4372259;0,85;0,44;0,85;0,55;T0831
+40;Manipulation of View; ['impact-ics']; ['Windows', 'Engineering Workstation', 'Human-Machine Interface', 'Sensor'];;;2,83525473;0,85;0,77;0,85;0,62;T0832
+41;Masquerading; ['evasion-ics', 'impair-process-control']; ['Windows', 'Human-Machine Interface', 'Control Server'];;;1,4372259;0,85;0,44;0,85;0,55;T0849
+42;Modify Alarm Settings; ['inhibit-response-function']; ['Windows', 'Human-Machine Interface', 'Control Server', 'Safety Instrumented System/Protection Relay', 'Field Controller/RTU/PLC/IED'];;;2,2211673;0,85;0,44;0,85;0,85;T0838
+43;Modify Parameter; ['impair-process-control']; ['Windows', 'Control Server', 'Field Controller/RTU/PLC/IED', 'Safety Instrumented System/Protection Relay', 'Human-Machine Interface'];;;2,2211673;0,85;0,44;0,85;0,85;T0836
+44;Module Firmware; ['persistence-ics', 'impair-process-control']; ['Windows', 'Field Controller/RTU/PLC/IED', 'Safety Instrumented System/Protection Relay'];;;0,70554726;0,27;0,44;0,85;0,85;T0839
+45;Monitor Process State; ['collection-ics']; ['Windows', 'Human-Machine Interface', 'Control Server', 'Data Historian', 'Field Controller/RTU/PLC/IED', 'Safety Instrumented System/Protection Relay'];;;1,234707705;0,27;0,77;0,85;0,85;T0801
+46;Network Connection Enumeration; ['discovery-ics']; ['Windows', 'Human-Machine Interface'];;;2,515145325;0,85;0,77;0,85;0,55;T0840
+47;Network Sniffing; ['discovery-ics']; ['Windows', 'Field Controller/RTU/PLC/IED'];;;0,8733;0,85;0,77;0,85;0,62;T0842
+48;Point & Tag Identification; ['collection-ics']; ['Windows', 'Data Historian', 'Control Server', 'Human-Machine Interface'];;;3,887042775;0,85;0,77;0,85;0,85;T0861
+49;Program Download; ['persistence-ics', 'impair-process-control', 'inhibit-response-function']; ['Windows', 'Field Controller/RTU/PLC/IED', 'Safety Instrumented System/Protection Relay'];;;2,2211673;0,85;0,44;0,85;0,85;T0843
+50;Program Upload; ['collection-ics']; ['Windows', 'Safety Instrumented System/Protection Relay', 'Field Controller/RTU/PLC/IED'];;;2,2211673;0,85;0,44;0,85;0,85;T0845
+51;Project File Infection; ['persistence-ics', 'execution-ics']; ['Windows', 'Engineering Workstation', 'Human-Machine Interface'];;;2,515145325;0,85;0,77;0,85;0,55;T0873
+52;Remote System Discovery; ['discovery-ics']; ['Windows', 'Control Server', 'Data Historian', 'Safety Instrumented System/Protection Relay', 'Field Controller/RTU/PLC/IED', 'Human-Machine Interface'];;;2,5715;0,85;0,77;0,85;0,62;T0846
+53;Replication Through Removable Media; ['initial-access-ics']; ['Windows', 'Human-Machine Interface', 'Data Historian', 'Control Server'];;;0,9145983;0,85;0,77;0,85;0,2;T0847
+54;Rootkit; ['evasion-ics', 'inhibit-response-function']; ['Windows', 'Field Controller/RTU/PLC/IED'];;;1,7224;0,85;0,44;0,85;0,55;T0851
+55;Screen Capture; ['collection-ics']; ['Windows', 'Human-Machine Interface'];;;2,515145325;0,85;0,77;0,85;0,55;T0852
+56;Scripting; ['execution-ics']; ['Windows', 'Engineering Workstation'];;;2,515145325;0,85;0,77;0,85;0,55;T0853
+57;Service Stop; ['impair-process-control']; ['Windows', 'Human-Machine Interface', 'Control Server', 'Data Historian', 'Engineering Workstation'];;;1,7224;0,85;0,77;0,85;0,55;T0881
+58;Spearphishing Attachment; ['initial-access-ics']; ['Windows', 'Engineering Workstation', 'Human-Machine Interface', 'Control Server', 'Data Historian'];;;2,5715;0,85;0,77;0,62;0,85;T0865
+59;Spoof Reporting Message; ['evasion-ics', 'impair-process-control']; ['Windows', 'Control Server'];;;3,887042775;0,85;0,77;0,85;0,85;T0856
+60;Standard Application Layer Protocol; ['command-and-control-ics']; ['Windows', 'Human-Machine Interface', 'Control Server', 'Data Historian', 'Engineering Workstation'];;;3,887042775;0,85;0,77;0,85;0,85;T0869
+61;Supply Chain Compromise; ['initial-access-ics']; ['Windows', 'Control Server', 'Data Historian', 'Engineering Workstation', 'Field Controller/RTU/PLC/IED', 'Human-Machine Interface', 'Input/Output Server', 'Safety Instrumented System/Protection Relay'];;;2,2211673;0,85;0,44;0,85;0,85;T0862
+62;System Firmware; ['persistence-ics', 'inhibit-response-function']; ['Windows', 'Safety Instrumented System/Protection Relay', 'Field Controller/RTU/PLC/IED', 'Input/Output Server'];;;2,2211673;0,85;0,44;0,85;0,85;T0857
+63;Theft of Operational Information; ['impact-ics']; ['Windows',  'Data Historian', 'Engineering Workstation', 'Control Server'];;;3,887042775;0,85;0,77;0,85;0,85;T0882
+64;Unauthorized Command Message; ['impair-process-control']; ['Windows', 'Field Controller/RTU/PLC/IED'];;;2,2211673;0,85;0,44;0,85;0,85;T0855
+65;User Execution; ['execution-ics']; ['Windows', 'Engineering Workstation', 'Human-Machine Interface'];;;1,83457659;0,85;0,77;0,62;0,55;T0863
+66;Valid Accounts; ['persistence-ics', 'lateral-movement-ics']; ['Windows', 'Control Server', 'Data Historian', 'Engineering Workstation', 'Field Controller/RTU/PLC/IED', 'Human-Machine Interface', 'Input/Output Server', 'Safety Instrumented System/Protection Relay'];;;3,887042775;0,85;0,77;0,85;0,85;T0859
+67;Wireless Compromise; ['initial-access-ics']; ['Windows', 'Network'];;;3,887042775;0,85;0,77;0,85;0,85;T0860
+68;Change Operating Mode; ['execution-ics', 'evasion-ics']; ['Safety Instrumented System/Protection Relay', 'Field Controller/RTU/PLC/IED'. 'Sensor'];;;2,2211673;0,85;0,44;0,85;0,85;T0858
+69;Lateral Tool Transfer; ['lateral-movement-ics']; ['Human-Machine Interface', 'Control Server', 'Data Historian'];;;2,515145325;0,85;0,77;0,85;0,55;T0867
+70;Loss of Protection; ['impact-ics']; ['None'];;;2,2211673;0,85;0,44;0,85;0,85;T0837
+71;Modify Controller Tasking; ['execution-ics']; ['Windows', 'Field Controller/RTU/PLC/IED'];;;1,4372259;0,85;0,44;0,85;0,55;T0821
+72;Modify Program; ['persistence-ics']; ['Field Controller/RTU/PLC/IED'];;;1,62014556;0,85;0,44;0,85;0,62;T0889
+73;Native API; ['execution-ics']; ['Control Server', 'Data Historian', 'Field Controller/RTU/PLC/IED', 'Human-Machine Interface', 'Input/Output Server', 'Safety Instrumented System/Protection Relay'];;;1,4372259;0,85;0,44;0,85;0,55;T0834
+74;Remote Services; ['initial-access-ics', 'lateral-movement-ics']; ['Human-Machine Interface', 'Control Server', 'Engineering Workstation'];;;1,62014556;0,85;0,44;0,85;0,62;T0886
+75;Remote System Information Discovery; ['discovery-ics']; ['Safety Instrumented System/Protection Relay', 'Field Controller/RTU/PLC/IED'];;;2,83525473;0,85;0,77;0,85;0,62;T0888
+76;Rogue Master; ['initial-access-ics']; ['Human-Machine Interface', 'Control Server', 'Engineering Workstation'];;;1,181753232;0,62;0,44;0,85;0,62;T0848
+77;Transient Cyber Asset; ['initial-access-ics']; ['Engineering Workstation', 'Network'];;;3,887042775;0,85;0,77;0,85;0,85;T0864
+78;Wireless Sniffing; ['discovery-ics', 'collection-ics']; ['None'];;;3,887042775;0,85;0,77;0,85;0,85;T0887

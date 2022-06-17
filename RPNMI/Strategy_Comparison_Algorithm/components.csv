@@ -1,0 +1,39 @@
+OT/IT;AEMC;Engineering Workstation;Linux;Unknonw;Unknonw;N;P;A;NP;1
+Mobile;Alarm and Resonse;Network;Unknonw;;Cell;N;NP;N;NP;2
+OT/IT;ANS;Engineering Workstation;Linux;Unknonw;Unknonw;N;P;A;NP;3
+OT/IT;APS-RCC Module;Network;Network;Unknonw;Unknonw;N;P;A;NP;4
+IT;ASC;Server;Linux;Unknonw;Unknonw;A;P;A;NP;5
+OT/IT;Backup AEMC;Engineering Workstation;Linux;Unknonw;Unknonw;A;P;A;P;6
+OT/IT;Backup ANS;Engineering Workstation;Linux;Unknonw;Unknonw;A;P;A;P;7
+IT;Backup ASC;Server;Linux;Unknonw;Unknonw;A;P;A;NP;8
+IT;Backup CM;Server;Linux;Unknonw;Unknonw;A;P;A;NP;9
+OT/IT;Backup Digital Logbook;Data Historian;Linux;Unknonw;Unknonw;A;P;A;NP;10
+OT/IT;C/D A Device 1;Network;Network;Unknonw;Unknonw;A;P;A;NP;11
+OT/IT;C/D B Device 1;Network;Network;Unknonw;Unknonw;A;P;A;NP;12
+IT;CM;Server;Linux;Unknonw;Unknonw;N;P;A;NP;13
+OT/IT;Digital Logbook;Data Historian;Linux;Unknonw;Unknonw;N;P;A;NP;14
+OT/IT;DP controller;Control Server;Windows;Unknonw;Unknonw;A;P;A;NP;15
+OT;Emergency Controller;Engineering Workstation;Unknonw;Unknonw;Unknonw;A;P;A;P;16
+OT/IT;Emergency Module 1;Network;Network;Unknonw;Unknonw;A;P;A;NP;17
+Mobile;Emergency Module 2;Network;Unknonw;Any;Cell;N;NP;N;NP;18
+IT;Emergency Push Button;Button;Unknonw;Unknonw;Unknonw;P;P;P;P;19
+OT;EO cameras;Sensor;Unknonw;Unknonw;Unknonw;A;P;A;NP;20
+OT;IO cards;Input/Output Server;Unknonw;Unknonw;Unknonw;A;P;A;NP;21
+OT;Lidars;Sensor;Unknonw;Unknonw;Unknonw;A;P;A;NP;22
+IT;Main GNSS IMU;Server;Windows;Unknonw;RTK,GPS;A;P;A;NP;23
+OT/IT/Mobile;MCM;Network;Network;Apps;Cell;N;P;A;NP;24
+OT;Radars;Sensor;Unknonw;Unknonw;Unknonw;A;P;A;NP;25
+OT/IT;RCC-APS-RCC Module;Network;Network;Unknonw;Unknonw;N;P;A;P;26
+OT/IT;RCC-C/D Device 1;Network;Network;Unknonw;Unknonw;A;P;A;P;27
+IT;RCC-CM;Server;Linux;Unknonw;Unknonw;N;P;A;P;28
+OT/IT;RCC-Digital Logbook;Data Historian;Linux;Unknonw;Unknonw;N;P;A;P;29
+OT/IT/Mobile;RCC-MCM;Network;Network;Apps;Cell;N;P;A;P;30
+Mobile;RCC-Traffic Module;Sensor;Unknonw;Any;GPS;A;P;A;P;31
+OT/IT;REMC;Engineering Workstation;Linux;Unknonw;Unknonw;N;P;A;P;32
+OT/IT;RNS;Engineering Workstation;Linux;Unknonw;Unknonw;N;P;A;P;33
+IT;RSC;Server;Linux;Unknonw;Unknonw;A;P;A;P;34
+OT/IT;Sensor Switch;Network;Network;Unknonw;Unknonw;A;P;A;NP;35
+OT;SPUs;Field Controller/RTU/PLC/IED;Unknonw;Unknonw;Unknonw;A;P;A;NP;36
+OT;Thrusters;End device;Unknonw;Unknonw;Unknonw;A;NP;A;NP;37
+Mobile;Traffic Module;Sensor;Unknonw;Any;GPS;A;P;A;NP;38
+OT;Video Cameras;Sensor;Unknonw;Unknonw;Unknonw;A;P;A;NP;39

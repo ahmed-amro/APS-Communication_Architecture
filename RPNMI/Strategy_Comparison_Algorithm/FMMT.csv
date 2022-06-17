@@ -1,0 +1,95 @@
+Enterprise;Account Access Removal;OOI;SC;;FC;ODC
+Enterprise;Application Exhaustion Flood;OOI;SC;;FC;
+Enterprise;Application or System Exploitation;OOI;SC;;FC;
+Mobile;Call Control;;;;;
+Mobile;Carrier Billing Fraud;;;;FC;
+Mobile;Clipboard Modification;OOI;;;;
+Mobile;collection;;;IC;;
+Enterprise;collection;;;IC;;
+ICS;collection-ics;;;IC;;
+Mobile;command-and-control;;;;;ODC
+Enterprise;command-and-control;;;;;ODC
+ICS;command-and-control-ics;;;;;ODC
+Mobile;credential-access;;;;;ODC
+Enterprise;credential-access;;;;;ODC
+ICS;Damage to Property;OOI;SC;IC;FC;
+Enterprise;Data Destruction;OOI;SC;IC;FC;
+Enterprise;Data Encrypted for Impact;OOI;SC;IC;FC;ODC
+Mobile;Data Encrypted for Impact;OOI;SC;IC;FC;ODC
+Enterprise;Data Manipulation;OOI;SC;IC;FC;
+Enterprise;Defacement;OOI;SC;IC;FC;ODC
+Mobile;defense-evasion;;;;;OCC
+Enterprise;defense-evasion;;;;;OCC
+Mobile;Delete Device Data;OOI;;IC;FC;
+ICS;Denial of Control;I2CF;SC;;;
+ICS;Denial of View;I2MF;SC;;FC;ODC
+Mobile;Device Lockout;OOI;;;;
+Enterprise;Direct Network Flood;OOI;SC;;FC;
+Mobile;discovery;;;;;ODC
+Enterprise;discovery;;;;;ODC
+ICS;discovery-ics;;;;;ODC
+Enterprise;Disk Content Wipe;OOI;SC;IC;FC;
+Enterprise;Disk Structure Wipe;OOI;SC;IC;FC;
+Enterprise;Disk Wipe;OOI;SC;IC;FC;
+Mobile;Downgrade to Insecure Protocols;OOI;;IC;;ODC
+Mobile;Eavesdrop on Insecure Network Communication;;;IC;;ODC
+Enterprise;Endpoint Denial of Service;OOI;SC;;FC;
+ICS;evasion-ics;;;;;OCC
+Mobile;execution;OOI;;;FC;ODC
+Enterprise;execution;OOI;;;FC;ODC
+ICS;execution-ics;OOI;SC;;FC;ODC
+Mobile;exfiltration;;;IC;;ODC
+Enterprise;exfiltration;;;IC;;ODC
+Mobile;Exploit SS7 to Redirect Phone Calls/SMS;OOI;;;;
+Mobile;Exploit SS7 to Track Device Location;;;LIC;;
+Enterprise;External Defacement;;;;;
+Matrix;Failure Mode;O;S;I;F;SE
+Enterprise;Firmware Corruption;OOI;SC;;FC;
+Mobile;Generate Fraudulent Advertising Revenue;;;;;
+ICS;impair-process-control;I2CF;SC;;FC;
+Enterprise;Inhibit System Recovery;OOI;SC;;FC;
+ICS;inhibit-response-function;OOI;SC;;FC;
+Mobile;initial-access;;;;;ODC
+Enterprise;initial-access;;;;;ODC
+ICS;initial-access-ics;;;;;ODC
+Mobile;Input Injection;OOI;;;;
+Enterprise;Internal Defacement;OOI;SC;IC;FC;ODC
+Mobile;Jamming or Denial of Service;OOI;SC;;FC;
+Mobile;lateral-movement;;;;;ODC
+Enterprise;lateral-movement;;;;;ODC
+ICS;lateral-movement-ics;;;;;ODC
+ICS;Loss of Availability;OOI;SC;IC;FC;ODC
+ICS;Loss of Control;I2CF;SC;;FC;
+ICS;Loss of Productivity and Revenue;OOI;SC;;FC;
+ICS;Loss of Safety;OOI;SC;;FC;
+ICS;Loss of View;I2MF;SC;;FC;ODC
+Mobile;Manipulate App Store Rankings or Ratings;;;;;
+Mobile;Manipulate Device Communication;OOI;SC;IC;FC;
+ICS;Manipulation of Control;I2CF;SC;;FC;
+ICS;Manipulation of View;I2MF;SC;;FC;ODC
+Mobile;Modify System Partition;OOI;;;;
+Enterprise;Network Denial of Service;OOI;SC;;FC;
+Mobile;Network Information Discovery;;;IC;;ODC
+Mobile;Obtain Device Cloud Backups;;;IC;;ODC
+Enterprise;OS Exhaustion Flood;OOI;SC;;FC;
+Mobile;persistence;;;;;OCC
+Enterprise;persistence;;;;;OCC
+ICS;persistence-ics;;;;;OCC
+Mobile;privilege-escalation;;;;;OCC
+Enterprise;privilege-escalation;;;;;OCC
+ICS;privilege-escalation-ics;;;;;OCC
+Enterprise;Reflection Amplification;OOI;SC;;FC;
+Mobile;Remotely Track Device Without Authorization;;;LIC;;
+Mobile;Remotely Wipe Data Without Authorization;OOI;SC;IC;FC;
+Enterprise;Resource Hijacking;OOI;SC;;FC;ODC
+Mobile;Rogue Cellular Base Station;OOI;;;;ODC
+Mobile;Rogue Wi-Fi Access Points;OOI;;;;ODC
+Enterprise;Runtime Data Manipulation;OOI;SC;IC;FC;
+Enterprise;Service Exhaustion Flood;OOI;SC;;FC;
+Enterprise;Service Stop;OOI;SC;;FC;
+Mobile;SIM Card Swap;OOI;;;;ODC
+Mobile;SMS Control;OOI;;;;ODC
+Enterprise;Stored Data Manipulation;OOI;SC;IC;FC;
+Enterprise;System Shutdown/Reboot;OOI;SC;;FC;
+ICS;Theft of Operational Information;;;IC;;ODC
+Enterprise;Transmitted Data Manipulation;OOI;SC;IC;FC;

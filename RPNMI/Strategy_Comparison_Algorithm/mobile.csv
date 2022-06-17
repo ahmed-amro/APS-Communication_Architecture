@@ -1,0 +1,93 @@
+number; name; kill_chain_phases; platforms;Technologies;Additions;CVSS_Exp;PR_V;AC_V;UI_V;AV_V;id
+1;Access Calendar Entries; ['collection']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1435
+2;Access Call Log; ['collection']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1433
+3;Access Contact List; ['collection']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1432
+4;Access Notifications; ['collection', 'credential-access']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1517
+5;Access Sensitive Data in Device Logs; ['collection', 'credential-access']; ['Android'];['Apps'];['Cell'];3,887042775;0,85;0,77;0,85;0,85;T1413
+6;Access Stored Application Data; ['collection', 'credential-access']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1409
+7;Alternate Network Mediums; ['command-and-control', 'exfiltration']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi','Bluetooth','Cell','Radio'];2,83525473;0,62;0,77;0,85;0,85;T1438
+8;Application Discovery; ['defense-evasion', 'discovery']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1418
+9;Attack PC via USB Connection; ['lateral-movement']; ['Android'];['Any','Apps'];['USB'];0,121090464;0,27;0,44;0,62;0,2;T1427
+10;Broadcast Receivers; ['persistence', 'execution']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1402
+11;Capture Audio; ['collection']; ['Android', 'iOS'];['Apps'];['Cell','Mic'];1,83457659;0,62;0,77;0,85;0,55;T1429
+12;Capture Camera; ['collection']; ['Android', 'iOS'];['Apps'];['Cam'];1,83457659;0,62;0,77;0,85;0,55;T1512
+13;Capture Clipboard Data; ['collection', 'credential-access']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1414
+14;Capture SMS Messages; ['collection', 'credential-access']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1412
+15;Carrier Billing Fraud; ['impact']; ['Android'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1448
+16;Clipboard Modification; ['impact']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1510
+17;Code Injection; ['persistence', 'privilege-escalation', 'defense-evasion']; ['Android', 'iOS'];['Apps'];['Cell'];0,798928515;0,27;0,77;0,85;0,55;T1540
+18;Commonly Used Port; ['command-and-control', 'exfiltration']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1436
+19;Compromise Application Executable; ['persistence']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1577
+20;Data Encrypted; ['exfiltration']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1532
+21;Data Encrypted for Impact; ['impact']; ['Android'];['Apps'];['Cell'];1,62014556;0,62;0,44;0,85;0,85;T1471
+22;Data from Local System; ['collection']; ['Android', 'iOS'];['Apps'];['Cell'];1,234707705;0,27;0,77;0,85;0,85;T1533
+23;Delete Device Data; ['impact', 'defense-evasion']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1447
+24;Deliver Malicious App via Authorized App Store; ['initial-access']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,85;0,77;0,62;0,85;T1475
+25;Deliver Malicious App via Other Means; ['initial-access']; ['Android', 'iOS'];['Apps'];['Cell'];1,181753232;0,62;0,44;0,62;0,85;T1476
+26;Device Lockout; ['impact', 'defense-evasion']; ['Android', 'iOS'];['Apps'];['Cell'];1,62014556;0,62;0,44;0,85;0,85;T1446
+27;Disguise Root/Jailbreak Indicators; ['defense-evasion']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1408
+28;Domain Generation Algorithms; ['command-and-control']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1520
+29;Downgrade to Insecure Protocols; ['network-effects']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi','Cell','GPS',Bluetooth','RTK','Radio'];2,2211673;0,85;0,44;0,85;0,85;T1466
+30;Download New Code at Runtime; ['defense-evasion']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1407
+31;Drive-by Compromise; ['initial-access']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,85;0,77;0,62;0,85;T1456
+32;Eavesdrop on Insecure Network Communication; ['network-effects']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi','Cell','GPS',Bluetooth','RTK','Radio'];2,2211673;0,85;0,44;0,85;0,85;T1439
+33;Evade Analysis Environment; ['defense-evasion', 'discovery']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1523
+34;Exploit Enterprise Resources; ['lateral-movement']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,85;0,77;0,62;0,55;T1428
+35;Exploit OS Vulnerability; ['privilege-escalation']; ['Android', 'iOS'];['Apps'];['Cell'];3,887042775;0,85;0,77;0,85;0,85;T1404
+36;Exploit SS7 to Redirect Phone Calls/SMS; ['network-effects']; ['Android', 'iOS'];['Any','Apps'];['Cell'];3,887042775;0,85;0,77;0,85;0,85;T1449
+37;Exploit SS7 to Track Device Location; ['network-effects']; ['Android', 'iOS'];['Any','Apps'];['Cell'];3,887042775;0,85;0,77;0,85;0,85;T1450
+38;Exploit TEE Vulnerability; ['credential-access', 'privilege-escalation']; ['Android'];['Apps'];['Cell'];1,83457659;0,85;0,77;0,62;0,55;T1405
+39;Exploit via Charging Station or PC; ['initial-access']; ['Android', 'iOS'];['Apps'];['Cell','USB'];0,66711876;0,62;0,77;0,85;0,2;T1458
+40;Exploit via Radio Interfaces; ['initial-access']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi','Bluetooth','Cell',RTK','Radio'];2,83525473;0,62;0,77;0,85;0,85;T1477
+41;File and Directory Discovery; ['discovery']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1420
+42;Foreground Persistence; ['collection', 'persistence']; ['Android'];['Apps'];['Cam','Mic'];1,83457659;0,62;0,77;0,85;0,55;T1541
+43;Generate Fraudulent Advertising Revenue; ['impact']; ['Android', 'iOS'];['Apps'];['Cell'];0,798928515;0,27;0,77;0,85;0,55;T1472
+44;Geofencing; ['defense-evasion']; ['Android', 'iOS'];['Apps'];['Cell'];2,068068156;0,62;0,77;0,62;0,85;T1581
+45;Input Capture; ['collection', 'credential-access']; ['Android', 'iOS'];['Apps'];['Cell'];1,338161748;0,62;0,77;0,62;0,55;T1417
+46;Input Injection; ['defense-evasion', 'impact']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1516
+47;Input Prompt; ['credential-access']; ['Android', 'iOS'];['Apps'];['Cell'];1,338161748;0,62;0,77;0,62;0,55;T1411
+48;Install Insecure or Malicious Configuration; ['defense-evasion', 'initial-access']; ['Android', 'iOS'];['Apps'];['Cell'];2,068068156;0,62;0,77;0,62;0,85;T1478
+49;Jamming or Denial of Service; ['network-effects']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi','Cell','GPS',Bluetooth','RTK','Radio'];3,887042775;0,85;0,77;0,85;0,85;T1464
+50;Keychain; ['credential-access']; ['iOS'];['Apps'];['Cell'];1,234707705;0,27;0,77;0,85;0,85;T1579
+51;Location Tracking; ['collection', 'discovery']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1430
+52;Lockscreen Bypass; ['initial-access']; ['Android', 'iOS'];['Apps'];['Cell'];0,66711876;0,62;0,77;0,85;0,2;T1461
+53;Manipulate App Store Rankings or Ratings; ['impact']; ['Android', 'iOS'];['Apps'];['Cell'];1,234707705;0,27;0,77;0,85;0,85;T1452
+54;Manipulate Device Communication; ['network-effects']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi','Cell','GPS',Bluetooth','RTK','Radio'];2,2211673;0,85;0,44;0,85;0,85;T1463
+55;Masquerade as Legitimate Application; ['initial-access', 'defense-evasion']; ['Android', 'iOS'];['Apps'];['Cell'];2,068068156;0,62;0,77;0,62;0,85;T1444
+56;Modify Cached Executable Code; ['persistence']; ['Android'];['Apps'];['Cell'];0,798928515;0,27;0,77;0,85;0,55;T1403
+57;Modify OS Kernel or Boot Partition; ['defense-evasion', 'persistence']; ['Android', 'iOS'];['Apps'];['Cell'];3,887042775;0,85;0,77;0,85;0,85;T1398
+58;Modify System Partition; ['defense-evasion', 'persistence', 'impact']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,85;0,77;0,62;0,55;T1400
+59;Modify Trusted Execution Environment; ['defense-evasion', 'persistence']; ['Android'];['Apps'];['Cell'];1,83457659;0,85;0,77;0,62;0,55;T1399
+60;Native Code; ['defense-evasion', 'execution']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1575
+61;Network Information Discovery; ['collection']; ['Android'];['Apps'];['Wi-Fi','Cell','GPS',Bluetooth','RTK','Radio'];2,83525473;0,62;0,77;0,85;0,85;T1507
+62;Network Service Scanning; ['discovery']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1423
+63;Network Traffic Capture or Redirection; ['collection', 'credential-access']; ['Android', 'iOS'];['Apps'];['Cell'];2,068068156;0,62;0,77;0,62;0,85;T1410
+64;Obfuscated Files or Information; ['defense-evasion']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,85;0,77;0,62;0,85;T1406
+65;Obtain Device Cloud Backups; ['remote-service-effects']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi','Cell','GPS',Bluetooth','USB','RTK'];3,887042775;0,85;0,77;0,85;0,85;T1470
+66;Process Discovery; ['discovery']; ['Android'];['Apps'];['Cell'];0,798928515;0,27;0,77;0,85;0,55;T1424
+67;Remote File Copy; ['command-and-control']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1544
+68;Remotely Track Device Without Authorization; ['remote-service-effects']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi','Cell','GPS',Bluetooth','RTK','Radio'];3,887042775;0,85;0,44;0,85;0,85;T1468
+69;Remotely Wipe Data Without Authorization; ['remote-service-effects']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi','Cell','GPS',Bluetooth','RTK','Radio'];3,887042775;0,85;0,44;0,85;0,85;T1469
+70;Rogue Cellular Base Station; ['network-effects']; ['Android', 'iOS'];['Any','Apps'];['Cell'];2,2211673;0,85;0,44;0,85;0,85;T1467
+71;Rogue Wi-Fi Access Points; ['network-effects']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi'];3,887042775;0,85;0,77;0,85;0,85;T1465
+72;Screen Capture; ['collection']; ['Android'];['Apps'];['Cell'];1,234707705;0,27;0,77;0,85;0,85;T1513
+73;SIM Card Swap; ['network-effects']; ['Android', 'iOS'];['Any','Apps'];['Cell'];3,887042775;0,85;0,77;0,85;0,85;T1451
+74;SMS Control; ['impact']; ['Android'];['Apps'];['Cell'];0,798928515;0,27;0,77;0,85;0,55;T1582
+75;Standard Application Layer Protocol; ['command-and-control', 'exfiltration']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1437
+76;Standard Cryptographic Protocol; ['command-and-control']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1521
+77;Supply Chain Compromise; ['initial-access']; ['Android', 'iOS'];['Any','Apps'];['Wi-Fi','Cell','GPS',Bluetooth','USB','RTK','Radio'];2,83525473;0,62;0,77;0,85;0,85;T1474
+78;Suppress Application Icon; ['defense-evasion']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1508
+79;System Information Discovery; ['discovery']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1426
+80;System Network Configuration Discovery; ['discovery']; ['Android', 'iOS'];['Apps'];['Cell'];0,798928515;0,27;0,77;0,85;0,55;T1422
+81;System Network Connections Discovery; ['discovery']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1421
+82;Uncommonly Used Port; ['command-and-control']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1509
+83;Uninstall Malicious Application; ['defense-evasion']; ['Android'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1576
+84;URI Hijacking; ['credential-access']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1416
+85;Web Service; ['command-and-control']; ['Android', 'iOS'];['Apps'];['Cell'];2,83525473;0,62;0,77;0,85;0,85;T1481
+86;Call Control; ['collection', 'impact', 'command-and-control']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1616
+87;Command-Line Interface; ['execution']; ['Android', 'iOS'];['Any','Apps'];['Cell','Wi-Fi','Cell','GPS',Bluetooth','USB','RTK','Radio'];0,45653058;0,27;0,44;0,85;0,55;T1605
+88;Device Administrator Permissions; ['privilege-escalation']; ['Android'];['Apps'];['Cell'];1,338161748;0,62;0,77;0,62;0,55;T1401
+89;Hooking; ['defense-evasion']; ['Android'];['Apps'];['Cell'];0,45653058;0,27;0,44;0,85;0,55;T1617
+90;Proxy Through Victim; ['defense-evasion']; ['Android'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1604
+91;Scheduled Task/Job; ['execution', 'persistence']; ['Android', 'iOS'];['Apps'];['Cell'];1,83457659;0,62;0,77;0,85;0,55;T1603
+92;User Evasion; ['defense-evasion']; ['Android'];['Apps'];['Cell'];2,515145325;0,85;0,77;0,85;0,55;T1618
